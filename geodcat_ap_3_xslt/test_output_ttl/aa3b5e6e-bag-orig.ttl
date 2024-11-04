@@ -1,0 +1,306 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix geodcatap: <http://data.europa.eu/930/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geodcatap: a dcterms:Standard .
+
+geodcatap:spatialResolutionAsScale a dqv:Metric .
+
+<http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations> a dcterms:RightsStatement .
+
+<http://publications.europa.eu/resource/authority/file-type/GML> a dcterms:MediaType .
+
+<http://publications.europa.eu/resource/authority/frequency/DAILY> a dcterms:Frequency .
+
+<http://www.opengeospatial.org/standards/wms> a dcterms:Standard .
+
+<http://www.opengis.net/def/crs/EPSG/0/28992> a dcterms:Standard ;
+    dcterms:type <http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem> .
+
+<http://www.opengis.net/def/crs/EPSG/0/5709> a dcterms:Standard ;
+    dcterms:type <http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem> .
+
+<https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/> a foaf:Document ;
+    dcterms:description "accessPoint"@nl ;
+    dcterms:title "BAG API Individuele Bevragingen"@nl .
+
+<https://labs.kadaster.nl/cases/bag-ld> a foaf:Document ;
+    dcterms:description "accessPoint"@nl ;
+    dcterms:title "Linked open data BAG"@nl .
+
+<https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search?node=srv#/metadata/1c0dcc64-91aa-4d44-a9e3-54355556f5e7> a foaf:Document ;
+    dcterms:description "accessPoint"@nl ;
+    dcterms:title "BAG (WFS) overzicht featuretypes"@nl .
+
+<https://service.pdok.nl/lv/bag/atom/bag.xml> a foaf:Document ;
+    dcterms:description "accessPoint"@nl ;
+    dcterms:title "BAG download Geopackage"@nl .
+
+<https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-api-individuele-bevragingen> a foaf:Document ;
+    dcterms:description "accessPoint"@nl ;
+    dcterms:title "Informatiepagina over de BAG API Individuele Bevragingen"@nl .
+
+<http://creativecommons.org/publicdomain/mark/1.0/deed.nl> a dcterms:LicenseDocument,
+        dcterms:RightsStatement .
+
+<http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply> a dcterms:LicenseDocument,
+        dcterms:RightsStatement .
+
+<http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/custodian> a dcat:Role .
+
+<http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> a dcat:Role .
+
+<http://publications.europa.eu/resource/authority/language/DUT> a dcterms:LinguisticSystem .
+
+<http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> a dcat:Dataset,
+        prov:Entity ;
+    geodcatap:custodian [ a prov:Agent,
+                foaf:Person ;
+            locn:address [ a locn:Address ;
+                    locn:adminUnitL1 "Nederland" ;
+                    locn:adminUnitL2 "Gelderland" ;
+                    locn:postCode "7300 GH" ;
+                    locn:postName "Apeldoorn" ;
+                    locn:thoroughfare "Postbus 9046" ] ;
+            org:memberOf [ a foaf:Organization ;
+                    foaf:name "Kadaster"@nl ] ;
+            foaf:mbox <mailto:bag@kadaster.nl> ;
+            foaf:name "Klantcontactcenter"@nl ;
+            foaf:phone <tel:+31088-1833400> ;
+            foaf:workplaceHomepage <https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag> ] ;
+    geodcatap:referenceSystem <http://www.opengis.net/def/crs/EPSG/0/28992>,
+        <http://www.opengis.net/def/crs/EPSG/0/5709> ;
+    geodcatap:resourceType <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset> ;
+    geodcatap:topicCategory <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/location>,
+        <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/planningCadastre>,
+        <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure> ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/DAILY> ;
+    dcterms:conformsTo [ a dcterms:Standard ;
+            dcterms:issued "2010-12-08"^^xsd:date ;
+            dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ;
+    dcterms:created "2013-02-18"^^xsd:date ;
+    dcterms:description "De gegevens bestaan uit BAG-panden en een deelselectie van BAG-gegevens van deze panden en de zich daarin bevindende verblijfsobjecten. Ook de ligplaatsen en standplaatsen zijn hierin opgenomen met een deelselectie van BAG-gegevens. De gegevens van de nummeraanduiding zijn in deze services onderdeel van de adresseerbare objecten, hierbij wordt slechts 1 adres opgenomen, dus objecten met meerdere adressen (hoofd- en nevenadressen) zijn niet compleet. In deze services zitten dus niet alle BAG adressen. Aangezien niet alle BAG gegevens worden geleverd, adviseren wij u om de actuele gegevens in één van de BAG producten te controleren. Raadpleeg de BAG Viewer voor enkele bevragingen van BAG gegevens. Een overzicht van alle beschikbare producten kunt u vinden op de website https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag . De BAG WMS, BAG WFS en BAG API Individuele bevragingen zijn expliciet niet bedoeld voor bulkbevragingen waarmee veel gegevens in één keer worden opgevraagd en in een database worden verwerkt. Wilt u in één keer meer gegevens opvragen, dan raden wij u aan om gebruik te maken van onze BAG Geopackage (https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-geopackage) of BAG extract (https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-2.0-extract). De BAG Geopackage en de BAG extract kunt u downloaden via de Atom downloadservice: https://service.pdok.nl/lv/bag/atom/bag.xml . Deze dataset wordt ook gebruikt voor het ontsluiten van het INSPIRE thema Gebouwen. Het betreft gebouwcontouren, constructieve onderdelen van gebouwen en ruimtelijke barrieres. Dit betreft niet-geharmoniseerde data uit de basisregistratie Adressen en Gebouwen (BAG). De service wordt dagelijks geactualiseerd."@nl ;
+    dcterms:identifier ""^^xsd:string ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/DUT> ;
+    dcterms:provenance [ a dcterms:ProvenanceStatement ;
+            dcterms:description "Ontwikkeld uit de Basisregistratie Adressen en Gebouwen (BAG)"@nl ] ;
+    dcterms:spatial [ a dcterms:Location ;
+            dcat:bbox "{\"type\":\"Polygon\",\"coordinates\":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}"^^geo:geoJSONLiteral,
+                "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4807 50.6058</gml:lowerCorner><gml:upperCorner>7.9685 53.7187</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral,
+                "POLYGON((2.4807 53.7187,7.9685 53.7187,7.9685 50.6058,2.4807 50.6058,2.4807 53.7187))"^^geo:wktLiteral,
+                "{\"type\":\"Polygon\",\"coordinates\":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}"^^<https://www.iana.org/assignments/media-types/application/vnd.geo+json> ;
+            locn:geometry "{\"type\":\"Polygon\",\"coordinates\":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}"^^geo:geoJSONLiteral,
+                "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4807 50.6058</gml:lowerCorner><gml:upperCorner>7.9685 53.7187</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral,
+                "POLYGON((2.4807 53.7187,7.9685 53.7187,7.9685 50.6058,2.4807 50.6058,2.4807 53.7187))"^^geo:wktLiteral,
+                "{\"type\":\"Polygon\",\"coordinates\":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}"^^<https://www.iana.org/assignments/media-types/application/vnd.geo+json> ],
+        [ a dcterms:Location ;
+            skos:prefLabel "Nederland"@nl ] ;
+    dcterms:temporal [ a dcterms:PeriodOfTime ;
+            schema1:endDate "2025-12-31"^^xsd:date ;
+            schema1:startDate "1996-01-01"^^xsd:date ;
+            dcat:endDate "2025-12-31"^^xsd:date ;
+            dcat:startDate "1996-01-01"^^xsd:date ] ;
+    dcterms:title "Basisregistratie Adressen en gebouwen (BAG)"@nl ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcterms:accessRights <http://creativecommons.org/publicdomain/mark/1.0/deed.nl>,
+                <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,
+                <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations> ;
+            dcterms:description "accessPoint"@nl ;
+            dcterms:format <http://publications.europa.eu/resource/authority/file-type/GML> ;
+            dcterms:license <http://creativecommons.org/publicdomain/mark/1.0/deed.nl>,
+                <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply> ;
+            dcterms:rights [ a dcterms:RightsStatement ;
+                    dcterms:description "Geen gebruiksbeperkingen"@nl ] ;
+            dcterms:title "BAG (WMS)"@nl ;
+            cnt:characterEncoding "UTF-8"^^xsd:string ;
+            adms:representationTechnique <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ;
+            dcat:accessService [ a dcat:DataService ;
+                    geodcatap:serviceProtocol <http://www.opengeospatial.org/standards/wms> ;
+                    dcterms:title "BAG (WMS)"@nl ;
+                    dcat:endpointDescription <https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS> ;
+                    dcat:endpointURL <https://service.pdok.nl/lv/bag/wms/v2_0> ] ;
+            dcat:accessURL <https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&service=WMS> ] ;
+    dcat:keyword "BAG"@nl,
+        "Basisregistraties Adressen en Gebouwen"@nl,
+        "adres"@nl,
+        "basisset NOVEX"@nl,
+        "gebouw"@nl,
+        "ligplaats"@nl,
+        "nummeraanduiding"@nl,
+        "pand"@nl,
+        "standplaats"@nl,
+        "verblijfsobject"@nl,
+        "woonplaats"@nl ;
+    dcat:landingPage <https://api.bag.kadaster.nl/lvbag/individuelebevragingen/v2/>,
+        <https://labs.kadaster.nl/cases/bag-ld>,
+        <https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search?node=srv#/metadata/1c0dcc64-91aa-4d44-a9e3-54355556f5e7>,
+        <https://service.pdok.nl/lv/bag/atom/bag.xml>,
+        <https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-api-individuele-bevragingen> ;
+    dcat:theme <http://data.europa.eu/eli/reg_impl/2023/138/oj>,
+        <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national>,
+        <http://www.eionet.europa.eu/gemet/nl/inspire-theme/ad>,
+        <http://www.eionet.europa.eu/gemet/nl/inspire-theme/bu>,
+        <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021> ;
+    dqv:hasQualityMeasurement [ a dqv:QualityMeasurement ;
+            dqv:isMeasurementOf geodcatap:spatialResolutionAsScale ;
+            dqv:value 0.001 ] ;
+    prov:qualifiedAttribution [ a prov:Attribution ;
+            dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/custodian> ;
+            dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/custodian> ;
+            prov:agent [ a prov:Agent,
+                        foaf:Person ;
+                    locn:address [ a locn:Address ;
+                            locn:adminUnitL1 "Nederland" ;
+                            locn:adminUnitL2 "Gelderland" ;
+                            locn:postCode "7300 GH" ;
+                            locn:postName "Apeldoorn" ;
+                            locn:thoroughfare "Postbus 9046" ] ;
+                    org:memberOf [ a foaf:Organization ;
+                            foaf:name "Kadaster"@nl ] ;
+                    foaf:mbox <mailto:bag@kadaster.nl> ;
+                    foaf:name "Klantcontactcenter"@nl ;
+                    foaf:phone <tel:+31088-1833400> ;
+                    foaf:workplaceHomepage <https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag> ] ] ;
+    prov:wasUsedBy [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De hier gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De hier gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "Inhoud en structuur wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-05-03"^^xsd:date ;
+                                    dcterms:title "INSPIRE Data Specification on Addresses - Guidelines"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "Structuur en inhoud van de dataset wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2013-02-04"^^xsd:date ;
+                                    dcterms:title "INSPIRE Data Specification on Buildings - Draft Technical Guidelines"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "Inhoud en structuur wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-05-03"^^xsd:date ;
+                                    dcterms:title "INSPIRE Data Specification on Addresses - Guidelines"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "Structuur en inhoud van de dataset wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2013-02-04"^^xsd:date ;
+                                    dcterms:title "INSPIRE Data Specification on Buildings - Draft Technical Guidelines"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De hier gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "Inhoud en structuur wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-05-03"^^xsd:date ;
+                                    dcterms:title "INSPIRE Data Specification on Addresses - Guidelines"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "Structuur en inhoud van de dataset wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2013-02-04"^^xsd:date ;
+                                    dcterms:title "INSPIRE Data Specification on Buildings - Draft Technical Guidelines"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ] ;
+    foaf:isPrimaryTopicOf [ a dcat:CatalogRecord ;
+            dcterms:conformsTo geodcatap: ;
+            dcterms:identifier "aa3b5e6e-7baa-40c0-8972-3353e927ec2f"^^xsd:string ;
+            dcterms:language <http://publications.europa.eu/resource/authority/language/DUT> ;
+            dcterms:modified "2024-08-26"^^xsd:date ;
+            dcterms:source [ a dcat:CatalogRecord ;
+                    dcterms:conformsTo [ a dcterms:Standard ;
+                            dcterms:title "ISO 19115"@nl ;
+                            owl:versionInfo "Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0"@nl ] ;
+                    dcterms:modified "2024-08-26"^^xsd:date ;
+                    cnt:characterEncoding "UTF-8"^^xsd:string ] ;
+            dcat:contactPoint [ a vcard:Individual ;
+                    vcard:fn "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ;
+                    vcard:hasAddress [ a vcard:Address ;
+                            vcard:country-name "Nederland" ;
+                            vcard:locality "Apeldoorn" ;
+                            vcard:postal-code "7311 KZ" ;
+                            vcard:region "Gelderland" ;
+                            vcard:street-address "Hofstraat 110" ] ;
+                    vcard:hasEmail <mailto:dpi-gi@kadaster.nl> ;
+                    vcard:hasURL <https://www.kadaster.nl> ;
+                    vcard:organization-name "Kadaster"@nl ] ;
+            prov:qualifiedAttribution [ a prov:Attribution ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+                    dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+                    prov:agent [ a prov:Agent,
+                                foaf:Person ;
+                            locn:address [ a locn:Address ;
+                                    locn:adminUnitL1 "Nederland" ;
+                                    locn:adminUnitL2 "Gelderland" ;
+                                    locn:postCode "7311 KZ" ;
+                                    locn:postName "Apeldoorn" ;
+                                    locn:thoroughfare "Hofstraat 110" ] ;
+                            org:memberOf [ a foaf:Organization ;
+                                    foaf:name "Kadaster"@nl ] ;
+                            foaf:mbox <mailto:dpi-gi@kadaster.nl> ;
+                            foaf:name "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ;
+                            foaf:workplaceHomepage <https://www.kadaster.nl> ] ] ;
+            foaf:primaryTopic <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ] .
+

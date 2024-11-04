@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:cnt="http://www.w3.org/2011/content#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:dctype="http://purl.org/dc/dcmitype/"
+         xmlns:dqv="http://www.w3.org/ns/dqv#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:geodcatap="http://data.europa.eu/930/"
+         xmlns:gsp="http://www.opengis.net/ont/geosparql#"
+         xmlns:locn="http://www.w3.org/ns/locn#"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:prov="http://www.w3.org/ns/prov#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:schema="http://schema.org/"
+         xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+   <rdf:Description rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml">
+      <foaf:isPrimaryTopicOf>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+            <foaf:primaryTopic rdf:resource="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            <dct:conformsTo>
+               <dct:Standard rdf:about="http://data.europa.eu/930/"/>
+            </dct:conformsTo>
+            <dct:language>
+               <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/DUT"/>
+            </dct:language>
+            <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-27</dct:modified>
+            <dcat:contactPoint>
+               <rdf:Description>
+                  <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Individual"/>
+                  <vcard:fn xml:lang="nl">InfoDesk</vcard:fn>
+                  <vcard:organization-name xml:lang="nl">Rijksdienst voor het Cultureel Erfgoed</vcard:organization-name>
+                  <vcard:hasTelephone rdf:resource="tel:+0334217456"/>
+                  <vcard:hasEmail rdf:resource="mailto:info@cultureelerfgoed.nl"/>
+                  <vcard:hasURL rdf:resource="https://www.cultureelerfgoed.nl"/>
+                  <vcard:hasAddress>
+                     <vcard:Address>
+                        <vcard:street-address>Postbus 1600</vcard:street-address>
+                        <vcard:locality>Amersfoort</vcard:locality>
+                        <vcard:region>UT</vcard:region>
+                        <vcard:postal-code>3800 BP</vcard:postal-code>
+                        <vcard:country-name>NL</vcard:country-name>
+                     </vcard:Address>
+                  </vcard:hasAddress>
+               </rdf:Description>
+            </dcat:contactPoint>
+            <prov:qualifiedAttribution>
+               <prov:Attribution>
+                  <prov:agent>
+                     <rdf:Description>
+                        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                        <foaf:name xml:lang="nl">InfoDesk</foaf:name>
+                        <org:memberOf>
+                           <foaf:Organization>
+                              <foaf:name xml:lang="nl">Rijksdienst voor het Cultureel Erfgoed</foaf:name>
+                           </foaf:Organization>
+                        </org:memberOf>
+                        <foaf:phone rdf:resource="tel:+0334217456"/>
+                        <foaf:mbox rdf:resource="mailto:info@cultureelerfgoed.nl"/>
+                        <foaf:workplaceHomepage rdf:resource="https://www.cultureelerfgoed.nl"/>
+                        <locn:address>
+                           <locn:Address>
+                              <locn:thoroughfare>Postbus 1600</locn:thoroughfare>
+                              <locn:postName>Amersfoort</locn:postName>
+                              <locn:adminUnitL2>UT</locn:adminUnitL2>
+                              <locn:postCode>3800 BP</locn:postCode>
+                              <locn:adminUnitL1>NL</locn:adminUnitL1>
+                           </locn:Address>
+                        </locn:address>
+                     </rdf:Description>
+                  </prov:agent>
+                  <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
+                  <dcat:hadRole>
+                     <dcat:Role rdf:about="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
+                  </dcat:hadRole>
+               </prov:Attribution>
+            </prov:qualifiedAttribution>
+            <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4e2ef670-cddd-11dd-ad8b-0800200c9a66</dct:identifier>
+            <dct:source rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+               <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-27</dct:modified>
+               <cnt:characterEncoding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTF-8</cnt:characterEncoding>
+               <dct:conformsTo rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+                  <dct:title xml:lang="nl">ISO 19115</dct:title>
+                  <owl:versionInfo xml:lang="nl">Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0</owl:versionInfo>
+               </dct:conformsTo>
+            </dct:source>
+         </rdf:Description>
+      </foaf:isPrimaryTopicOf>
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <geodcatap:resourceType rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset"/>
+      <dct:title xml:lang="nl">Stads- en Dorpsgezichten</dct:title>
+      <dct:description xml:lang="nl">De Stads- en Dorpsgezichtenkaartlaag bevat alle gebieden waarvoor de procedure is gestart om het gebied aan te wijzen als rijksbeschermd stads- of dorpsgezicht (ex artikel 35 van de Monumentenwet 1988). In de default weergave van de INSPIRE Web Map Service worden alleen de aangewezen stads- en dorpsgezichten getoond. De kwaliteit van de ligging van de begrenzing van de stads- en dorpsgezichten is wisselend. Zie de informatie over de datakwaliteit.</dct:description>
+      <dct:accrualPeriodicity>
+         <dct:Frequency rdf:about="http://publications.europa.eu/resource/authority/frequency/ANNUAL_2"/>
+      </dct:accrualPeriodicity>
+      <geodcatap:topicCategory rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/planningCadastre"/>
+      <dcat:keyword xml:lang="nl">historische geografie</dcat:keyword>
+      <dcat:keyword xml:lang="nl">stedenbouwkunde</dcat:keyword>
+      <dcat:keyword xml:lang="nl">planologie</dcat:keyword>
+      <dcat:keyword xml:lang="nl">architectuurgeschiedenis</dcat:keyword>
+      <dcat:keyword xml:lang="nl">bouwkunde</dcat:keyword>
+      <dcat:keyword xml:lang="nl">basisset NOVEX</dcat:keyword>
+      <dcat:theme>
+         <skos:Concept>
+            <skos:prefLabel xml:lang="nl">HVD</skos:prefLabel>
+            <dct:source rdf:resource="http://data.europa.eu/eli/reg_impl/2023/138/oj"/>
+         </skos:Concept>
+      </dcat:theme>
+      <dcat:theme>
+         <skos:Concept>
+            <skos:prefLabel xml:lang="nl">Aardobservatie en milieu</skos:prefLabel>
+            <dct:source rdf:resource="https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021"/>
+         </skos:Concept>
+      </dcat:theme>
+      <dcat:theme>
+         <skos:Concept>
+            <skos:prefLabel xml:lang="nl">Beschermde gebieden</skos:prefLabel>
+            <dct:source rdf:resource="http://www.eionet.europa.eu/gemet/nl/inspire-theme/ps"/>
+         </skos:Concept>
+      </dcat:theme>
+      <dcat:theme>
+         <skos:Concept>
+            <skos:prefLabel xml:lang="nl">Nationaal</skos:prefLabel>
+            <dct:source rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national"/>
+         </skos:Concept>
+      </dcat:theme>
+      <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+      <dct:language>
+         <dct:LinguisticSystem rdf:about="http://publications.europa.eu/resource/authority/language/DUT"/>
+      </dct:language>
+      <dct:spatial rdf:parseType="Resource">
+         <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))]]></locn:geometry>
+         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>]]></locn:geometry>
+         <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></locn:geometry>
+         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></locn:geometry>
+         <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))]]></dcat:bbox>
+         <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>]]></dcat:bbox>
+         <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></dcat:bbox>
+         <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></dcat:bbox>
+      </dct:spatial>
+      <dct:temporal>
+         <dct:PeriodOfTime>
+            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-02T00:00:00</schema:startDate>
+            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-01T00:00:00</schema:endDate>
+            <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-02T00:00:00</dcat:startDate>
+            <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-01T00:00:00</dcat:endDate>
+         </dct:PeriodOfTime>
+      </dct:temporal>
+      <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-09</dct:issued>
+      <dct:provenance>
+         <dct:ProvenanceStatement>
+            <dct:description xml:lang="nl">Voor een klein aantal gebieden zijn bij het digitaliseren van de begrenzing de GBKN en de kadastrale percelen uit het LKI als referentieondergronden gebruikt. Voor deze gebieden geldt dat de begrenzing wat ligging betreft identiek is aan de begrenzing die op de officiele (papieren) kaart staat die bij het aanwijzingsbesluit en -toelichting is gevoegd. Zie het veld Ondergrond. De ligging van de begrenzingen in de provincies Friesland en Limburg is visueel vergeleken met die in de aanwijzingskaarten en waar nodig verbeterd. Hierbij is gebruik gemaakt van de topografische kaart op schaal 1:10.000 (TOP10vector). De verbeteringen hebben de kwaliteit van de ligging van de begrenzingen verhoogd maar nemen niet het risico weg dat de ligging van de begrenzingen mogelijk tot maximaal zo'n 20 meter afwijkt van die op de officiele aanwijzingskaarten. Voor de overige provincies is deze controle niet uitgevoerd. De kwaliteit van de ligging van de begrenzingen is voor deze provincies onduidelijk. Op basis van de ervaringen opgedaan tijdens het werken met de kaartlaag en bij de controle van de begrenzingen in Friesland en Limburg, kan de maximale afwijking in de ligging van de begrenzing worden ingeschat op ongeveer 100 meter. Voor meer informatie over de beschrijvende gegevens van de stads- en dorpsgezichten en de ligging van de begrenzing kan contact opgenomen worden met de Rijksdienst voor het Cultureel Erfgoed, telefoon: 033-4217456 of info@cultureelerfgoed.nl</dct:description>
+         </dct:ProvenanceStatement>
+      </dct:provenance>
+      <geodcatap:referenceSystem>
+         <rdf:Description rdf:about="http://www.opengis.net/def/crs/EPSG/0/28992">
+            <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+            <dct:type rdf:resource="http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem"/>
+         </rdf:Description>
+      </geodcatap:referenceSystem>
+      <dqv:hasQualityMeasurement>
+         <dqv:QualityMeasurement>
+            <dqv:isMeasurementOf>
+               <dqv:Metric rdf:about="http://data.europa.eu/930/spatialResolutionAsScale"/>
+            </dqv:isMeasurementOf>
+            <dqv:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0001</dqv:value>
+         </dqv:QualityMeasurement>
+      </dqv:hasQualityMeasurement>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-08</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant"/>
+               <dct:description xml:lang="nl">See the referenced specification</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-26</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant"/>
+               <dct:description xml:lang="nl">De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen.</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">Stads- en Dorpsgezichten gegevensstructuur en -semantiek</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-22</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant"/>
+               <dct:description xml:lang="nl">De data is conform de in het document beschreven gegevensstructuur en -semantiek.</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-08</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant"/>
+               <dct:description xml:lang="nl">See the referenced specification</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-26</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant"/>
+               <dct:description xml:lang="nl">De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen.</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">Stads- en Dorpsgezichten gegevensstructuur en -semantiek</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-22</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant"/>
+               <dct:description xml:lang="nl">De data is conform de in het document beschreven gegevensstructuur en -semantiek.</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <dct:conformsTo rdf:parseType="Resource">
+         <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
+         <dct:title xml:lang="nl">Stads- en Dorpsgezichten gegevensstructuur en -semantiek</dct:title>
+         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-22</dct:issued>
+      </dct:conformsTo>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-08</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant"/>
+               <dct:description xml:lang="nl">See the referenced specification</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-26</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant"/>
+               <dct:description xml:lang="nl">De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen.</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <prov:wasUsedBy>
+         <prov:Activity>
+            <prov:used>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            </prov:used>
+            <prov:qualifiedAssociation rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+               <prov:hadPlan rdf:parseType="Resource">
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                  <prov:wasDerivedFrom rdf:parseType="Resource">
+                     <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                     <dct:title xml:lang="nl">Stads- en Dorpsgezichten gegevensstructuur en -semantiek</dct:title>
+                     <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-22</dct:issued>
+                  </prov:wasDerivedFrom>
+               </prov:hadPlan>
+            </prov:qualifiedAssociation>
+            <prov:generated rdf:parseType="Resource">
+               <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+               <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant"/>
+               <dct:description xml:lang="nl">De data is conform de in het document beschreven gegevensstructuur en -semantiek.</dct:description>
+            </prov:generated>
+         </prov:Activity>
+      </prov:wasUsedBy>
+      <dcat:distribution>
+         <dcat:Distribution rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e887">
+            <dct:title xml:lang="nl">Townscapes</dct:title>
+            <dct:description xml:lang="nl">accessPoint</dct:description>
+            <dcat:accessService>
+               <dcat:DataService rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml/DS/d0e887">
+                  <dct:title xml:lang="nl">Townscapes</dct:title>
+                  <dcat:endpointURL rdf:resource="https://services.rce.geovoorziening.nl/rce/wms"/>
+                  <dcat:endpointDescription rdf:resource="https://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities"/>
+                  <geodcatap:serviceProtocol>
+                     <dct:Standard rdf:about="http://www.opengeospatial.org/standards/wms"/>
+                  </geodcatap:serviceProtocol>
+               </dcat:DataService>
+            </dcat:accessService>
+            <dcat:accessURL rdf:resource="https://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities"/>
+            <dct:rights>
+               <dct:RightsStatement>
+                  <dct:description xml:lang="nl">Met de ligging van de begrenzingen van de stads- en dorpsgezichten dient behoedzaam te worden omgegaan. De kwaliteit is namelijk wisselend.</dct:description>
+               </dct:RightsStatement>
+            </dct:rights>
+            <dct:accessRights>
+               <dct:RightsStatement rdf:about="https://creativecommons.org/licenses/by/4.0/deed.nl"/>
+            </dct:accessRights>
+            <dct:accessRights>
+               <dct:RightsStatement rdf:about="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"/>
+            </dct:accessRights>
+            <dct:accessRights>
+               <dct:RightsStatement rdf:about="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"/>
+            </dct:accessRights>
+            <adms:representationTechnique rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector"/>
+            <cnt:characterEncoding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTF-8</cnt:characterEncoding>
+         </dcat:Distribution>
+      </dcat:distribution>
+      <dcat:distribution>
+         <dcat:Distribution rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e921">
+            <dct:title xml:lang="nl">Townscapes</dct:title>
+            <dct:description xml:lang="nl">accessPoint</dct:description>
+            <dcat:accessService>
+               <dcat:DataService rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml/DS/d0e921">
+                  <dct:title xml:lang="nl">Townscapes</dct:title>
+                  <dcat:endpointURL rdf:resource="https://services.rce.geovoorziening.nl/rce/wfs"/>
+                  <dcat:endpointDescription rdf:resource="https://services.rce.geovoorziening.nl/rce/wfs?request=GetCapabilities"/>
+                  <geodcatap:serviceProtocol>
+                     <dct:Standard rdf:about="http://www.opengeospatial.org/standards/wfs"/>
+                  </geodcatap:serviceProtocol>
+               </dcat:DataService>
+            </dcat:accessService>
+            <dcat:accessURL rdf:resource="https://services.rce.geovoorziening.nl/rce/wfs?request=GetCapabilities"/>
+            <dct:rights>
+               <dct:RightsStatement>
+                  <dct:description xml:lang="nl">Met de ligging van de begrenzingen van de stads- en dorpsgezichten dient behoedzaam te worden omgegaan. De kwaliteit is namelijk wisselend.</dct:description>
+               </dct:RightsStatement>
+            </dct:rights>
+            <dct:accessRights>
+               <dct:RightsStatement rdf:about="https://creativecommons.org/licenses/by/4.0/deed.nl"/>
+            </dct:accessRights>
+            <dct:accessRights>
+               <dct:RightsStatement rdf:about="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"/>
+            </dct:accessRights>
+            <dct:accessRights>
+               <dct:RightsStatement rdf:about="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"/>
+            </dct:accessRights>
+            <adms:representationTechnique rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector"/>
+            <cnt:characterEncoding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTF-8</cnt:characterEncoding>
+         </dcat:Distribution>
+      </dcat:distribution>
+      <dcat:landingPage>
+         <foaf:Document rdf:about="https://services.rce.geovoorziening.nl/rce_download/download/data/Stads_en_Dorpsgezichten_nl.xml">
+            <dct:title xml:lang="nl">Atom feed Townscapes</dct:title>
+            <dct:description xml:lang="nl">accessPoint</dct:description>
+         </foaf:Document>
+      </dcat:landingPage>
+      <dcat:landingPage>
+         <foaf:Document rdf:about="https://www.cultureelerfgoed.nl/onderwerpen/bronnen-en-kaarten/overzicht/kaart-van-beschermde-stads--en-dorpsgezichten">
+            <dct:title xml:lang="nl">Kaart met stads- en dorpsgezichten</dct:title>
+            <dct:description xml:lang="nl">accessPoint</dct:description>
+         </foaf:Document>
+      </dcat:landingPage>
+      <foaf:page>
+         <foaf:Document rdf:about="https://linkeddata.cultureelerfgoed.nl/rce/-/stories/High-Value-datasets">
+            <dct:title xml:lang="nl">Linked data INSPIRE en High Value datasets RCE</dct:title>
+            <dct:description xml:lang="nl">accessPoint</dct:description>
+         </foaf:Document>
+      </foaf:page>
+      <dcat:contactPoint>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Individual"/>
+            <vcard:fn xml:lang="nl">InfoDesk</vcard:fn>
+            <vcard:organization-name xml:lang="nl">Rijksdienst voor het Cultureel Erfgoed</vcard:organization-name>
+            <vcard:hasTelephone rdf:resource="tel:+0334217456"/>
+            <vcard:hasEmail rdf:resource="mailto:info@cultureelerfgoed.nl"/>
+            <vcard:hasURL rdf:resource="https://www.cultureelerfgoed.nl"/>
+            <vcard:hasAddress>
+               <vcard:Address>
+                  <vcard:street-address>Postbus 1600</vcard:street-address>
+                  <vcard:locality>Amersfoort</vcard:locality>
+                  <vcard:region>UT</vcard:region>
+                  <vcard:postal-code>3800 BP</vcard:postal-code>
+                  <vcard:country-name>NL</vcard:country-name>
+               </vcard:Address>
+            </vcard:hasAddress>
+         </rdf:Description>
+      </dcat:contactPoint>
+      <prov:qualifiedAttribution>
+         <prov:Attribution>
+            <prov:agent>
+               <rdf:Description>
+                  <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                  <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                  <foaf:name xml:lang="nl">InfoDesk</foaf:name>
+                  <org:memberOf>
+                     <foaf:Organization>
+                        <foaf:name xml:lang="nl">Rijksdienst voor het Cultureel Erfgoed</foaf:name>
+                     </foaf:Organization>
+                  </org:memberOf>
+                  <foaf:phone rdf:resource="tel:+0334217456"/>
+                  <foaf:mbox rdf:resource="mailto:info@cultureelerfgoed.nl"/>
+                  <foaf:workplaceHomepage rdf:resource="https://www.cultureelerfgoed.nl"/>
+                  <locn:address>
+                     <locn:Address>
+                        <locn:thoroughfare>Postbus 1600</locn:thoroughfare>
+                        <locn:postName>Amersfoort</locn:postName>
+                        <locn:adminUnitL2>UT</locn:adminUnitL2>
+                        <locn:postCode>3800 BP</locn:postCode>
+                        <locn:adminUnitL1>NL</locn:adminUnitL1>
+                     </locn:Address>
+                  </locn:address>
+               </rdf:Description>
+            </prov:agent>
+            <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
+            <dcat:hadRole>
+               <dcat:Role rdf:about="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
+            </dcat:hadRole>
+         </prov:Attribution>
+      </prov:qualifiedAttribution>
+   </rdf:Description>
+</rdf:RDF>

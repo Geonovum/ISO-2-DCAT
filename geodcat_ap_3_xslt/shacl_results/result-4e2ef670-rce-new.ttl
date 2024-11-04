@@ -1,0 +1,395 @@
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a shacl:ValidationReport ;
+    shacl:conforms false ;
+    shacl:result [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "More than 1 values on [ dcat:bbox Literal(\"<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>\" = None, datatype=geo:gmlLiteral), Literal(\"POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))\" = None, datatype=geo:wktLiteral), Literal(\"{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}\" = None, datatype=<https://www.iana.org/assignments/media-types/application/vnd.geo+json>), Literal(\"{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}\" = None, datatype=geo:geoJSONLiteral) ; locn:geometry Literal(\"<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>\" = None, datatype=geo:gmlLiteral), Literal(\"POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))\" = None, datatype=geo:wktLiteral), Literal(\"{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}\" = None, datatype=<https://www.iana.org/assignments/media-types/application/vnd.geo+json>), Literal(\"{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}\" = None, datatype=geo:geoJSONLiteral) ; rdf:type dcterms:Location, rdfs:Resource ]->dcat:bbox" ;
+            shacl:resultPath dcat:bbox ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:MaxCountConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/d75cb3222eabce83fa3e236344cbf419e465f10e> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml> ;
+            shacl:resultMessage "Value does not have class vcard:Kind" ;
+            shacl:resultPath dcat:contactPoint ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e> ;
+            shacl:value [ a rdfs:Resource,
+                        vcard:Individual ;
+                    vcard:fn "InfoDesk"@nl ;
+                    vcard:hasAddress [ a rdfs:Resource,
+                                vcard:Address ;
+                            vcard:country-name "NL" ;
+                            vcard:locality "Amersfoort" ;
+                            vcard:postal-code "3800 BP" ;
+                            vcard:region "UT" ;
+                            vcard:street-address "Postbus 1600" ] ;
+                    vcard:hasEmail <mailto:info@cultureelerfgoed.nl> ;
+                    vcard:hasTelephone <tel:+0334217456> ;
+                    vcard:hasURL <https://www.cultureelerfgoed.nl> ;
+                    vcard:organization-name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e887> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://www.w3.org/ns/adms#representationTechnique> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/a016cb765e696433fe29faa313ae6ae2f3f76702> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml/DS/d0e921> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/serviceProtocol> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DataServiceShape/eb98dee81407da4e91a31895d95101d0335b7c81> ;
+            shacl:value <http://www.opengeospatial.org/standards/wfs> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "More than 1 values on [ dcat:bbox Literal(\"<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>\" = None, datatype=geo:gmlLiteral), Literal(\"POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))\" = None, datatype=geo:wktLiteral), Literal(\"{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}\" = None, datatype=<https://www.iana.org/assignments/media-types/application/vnd.geo+json>), Literal(\"{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}\" = None, datatype=geo:geoJSONLiteral) ; locn:geometry Literal(\"<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>\" = None, datatype=geo:gmlLiteral), Literal(\"POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))\" = None, datatype=geo:wktLiteral), Literal(\"{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}\" = None, datatype=<https://www.iana.org/assignments/media-types/application/vnd.geo+json>), Literal(\"{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}\" = None, datatype=geo:geoJSONLiteral) ; rdf:type dcterms:Location, rdfs:Resource ]-><http://www.w3.org/ns/locn#geometry>" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:MaxCountConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/dde6f1d3b53e457ed56cd01d51f110aea62f5d72> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/referenceSystem> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/87161588819073178c8f6950dcce2286cac45320> ;
+            shacl:value <http://www.opengis.net/def/crs/EPSG/0/28992> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "Value is not of Node Kind shacl:BlankNodeOrIRI" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/d0b958cd33e8ef1bc031edaf2859b44db128a644> ;
+            shacl:value "POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))"^^geo:wktLiteral ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "Value does not have class <http://www.w3.org/ns/locn#Geometry>" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/53c8e9f0fc79ab4ed706e31129a2b3e02f7edd22> ;
+            shacl:value "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^geo:geoJSONLiteral ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode [ a rdfs:Resource,
+                        dcat:CatalogRecord ;
+                    dc1:conformsTo [ a dc1:Standard,
+                                rdfs:Resource ;
+                            dc1:title "ISO 19115"@nl ;
+                            owl:versionInfo "Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0"@nl ] ;
+                    dc1:modified "2024-09-27"^^xsd:date ;
+                    cnt:characterEncoding "UTF-8"^^xsd:string ] ;
+            shacl:resultMessage "Less than 1 values on [ cnt:characterEncoding Literal(\"UTF-8\", datatype=xsd:string) ; dcterms:conformsTo [ dcterms:title Literal(\"ISO 19115\", lang=nl) ; owl:versionInfo Literal(\"Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0\", lang=nl) ; rdf:type dcterms:Standard, rdfs:Resource ] ; dcterms:modified Literal(\"2024-09-27\", datatype=xsd:date) ; rdf:type dcat:CatalogRecord, rdfs:Resource ]->foaf:primaryTopic" ;
+            shacl:resultPath foaf:primaryTopic ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:MinCountConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:CatalogRecordShape/65eafe0643a998b84fc2d253de401f9ad8355770> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e921> ;
+            shacl:resultMessage "More than 1 values on <https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e921>->dc1:accessRights" ;
+            shacl:resultPath dc1:accessRights ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:MaxCountConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/7a20e2eb5f5549088fd53fa93fab0958019f267e> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "Value is not of Node Kind shacl:BlankNodeOrIRI" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/d0b958cd33e8ef1bc031edaf2859b44db128a644> ;
+            shacl:value "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^geo:geoJSONLiteral ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb63 ;
+            shacl:resultMessage "Value does not have class dcat:Resource" ;
+            shacl:resultPath foaf:primaryTopic ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:CatalogRecordShape/c65d45ed7195ead5f643ec8c8afd29c6dd9662bf> ;
+            shacl:value <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://www.opengis.net/def/crs/EPSG/0/28992> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath dc1:type ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:StandardShape/322371a77364a50f049d46180f6192532eea26dc> ;
+            shacl:value <http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "Value is not of Node Kind shacl:BlankNodeOrIRI" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/d0b958cd33e8ef1bc031edaf2859b44db128a644> ;
+            shacl:value "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb63 ;
+            shacl:resultMessage "Value does not have class vcard:Kind" ;
+            shacl:resultPath dcat:contactPoint ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:CatalogRecordShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e> ;
+            shacl:value [ a rdfs:Resource,
+                        vcard:Individual ;
+                    vcard:fn "InfoDesk"@nl ;
+                    vcard:hasAddress [ a rdfs:Resource,
+                                vcard:Address ;
+                            vcard:country-name "NL" ;
+                            vcard:locality "Amersfoort" ;
+                            vcard:postal-code "3800 BP" ;
+                            vcard:region "UT" ;
+                            vcard:street-address "Postbus 1600" ] ;
+                    vcard:hasEmail <mailto:info@cultureelerfgoed.nl> ;
+                    vcard:hasTelephone <tel:+0334217456> ;
+                    vcard:hasURL <https://www.cultureelerfgoed.nl> ;
+                    vcard:organization-name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/topicCategory> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/7e81f1a1332766b4be433580d64a6ec4b1530493> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/planningCadastre> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "Value does not have class <http://www.w3.org/ns/locn#Geometry>" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/53c8e9f0fc79ab4ed706e31129a2b3e02f7edd22> ;
+            shacl:value "POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))"^^geo:wktLiteral ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/resourceType> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/00bd195f813949c75d02f8a5916b9697bb4eb89f> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e921> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://www.w3.org/ns/adms#representationTechnique> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/a016cb765e696433fe29faa313ae6ae2f3f76702> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "Value does not have class <http://www.w3.org/ns/locn#Geometry>" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/53c8e9f0fc79ab4ed706e31129a2b3e02f7edd22> ;
+            shacl:value "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^<https://www.iana.org/assignments/media-types/application/vnd.geo+json> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode [ a rdfs:Resource,
+                        prov:Attribution ;
+                    dc1:type <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+                    dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+                    prov:agent [ a rdfs:Resource,
+                                prov:Agent,
+                                foaf:Person ;
+                            ns1:address [ a rdfs:Resource,
+                                        ns1:Address ;
+                                    ns1:adminUnitL1 "NL" ;
+                                    ns1:adminUnitL2 "UT" ;
+                                    ns1:postCode "3800 BP" ;
+                                    ns1:postName "Amersfoort" ;
+                                    ns1:thoroughfare "Postbus 1600" ] ;
+                            org:memberOf [ a rdfs:Resource,
+                                        foaf:Organization ;
+                                    foaf:name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ;
+                            foaf:mbox <mailto:info@cultureelerfgoed.nl> ;
+                            foaf:name "InfoDesk"@nl ;
+                            foaf:phone <tel:+0334217456> ;
+                            foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ] ] ;
+            shacl:resultMessage "Value does not have class foaf:Agent" ;
+            shacl:resultPath prov:agent ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#prov:AttributionShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc> ;
+            shacl:value [ a rdfs:Resource,
+                        prov:Agent,
+                        foaf:Person ;
+                    ns1:address [ a rdfs:Resource,
+                                ns1:Address ;
+                            ns1:adminUnitL1 "NL" ;
+                            ns1:adminUnitL2 "UT" ;
+                            ns1:postCode "3800 BP" ;
+                            ns1:postName "Amersfoort" ;
+                            ns1:thoroughfare "Postbus 1600" ] ;
+                    org:memberOf [ a rdfs:Resource,
+                                foaf:Organization ;
+                            foaf:name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ;
+                    foaf:mbox <mailto:info@cultureelerfgoed.nl> ;
+                    foaf:name "InfoDesk"@nl ;
+                    foaf:phone <tel:+0334217456> ;
+                    foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ] ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e887> ;
+            shacl:resultMessage "More than 1 values on <https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e887>->dc1:accessRights" ;
+            shacl:resultPath dc1:accessRights ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:MaxCountConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/7a20e2eb5f5549088fd53fa93fab0958019f267e> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode [ a rdfs:Resource,
+                        prov:Attribution ;
+                    dc1:type <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+                    dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+                    prov:agent [ a rdfs:Resource,
+                                prov:Agent,
+                                foaf:Person ;
+                            ns1:address [ a rdfs:Resource,
+                                        ns1:Address ;
+                                    ns1:adminUnitL1 "NL" ;
+                                    ns1:adminUnitL2 "UT" ;
+                                    ns1:postCode "3800 BP" ;
+                                    ns1:postName "Amersfoort" ;
+                                    ns1:thoroughfare "Postbus 1600" ] ;
+                            org:memberOf [ a rdfs:Resource,
+                                        foaf:Organization ;
+                                    foaf:name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ;
+                            foaf:mbox <mailto:info@cultureelerfgoed.nl> ;
+                            foaf:name "InfoDesk"@nl ;
+                            foaf:phone <tel:+0334217456> ;
+                            foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ] ] ;
+            shacl:resultMessage "Value does not have class foaf:Agent" ;
+            shacl:resultPath prov:agent ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#prov:AttributionShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc> ;
+            shacl:value [ a rdfs:Resource,
+                        prov:Agent,
+                        foaf:Person ;
+                    ns1:address [ a rdfs:Resource,
+                                ns1:Address ;
+                            ns1:adminUnitL1 "NL" ;
+                            ns1:adminUnitL2 "UT" ;
+                            ns1:postCode "3800 BP" ;
+                            ns1:postName "Amersfoort" ;
+                            ns1:thoroughfare "Postbus 1600" ] ;
+                    org:memberOf [ a rdfs:Resource,
+                                foaf:Organization ;
+                            foaf:name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ;
+                    foaf:mbox <mailto:info@cultureelerfgoed.nl> ;
+                    foaf:name "InfoDesk"@nl ;
+                    foaf:phone <tel:+0334217456> ;
+                    foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ] ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <https://services.rce.geovoorziening.nl/www/download/nl.xml/DS/d0e887> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/serviceProtocol> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DataServiceShape/eb98dee81407da4e91a31895d95101d0335b7c81> ;
+            shacl:value <http://www.opengeospatial.org/standards/wms> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "Value is not of Node Kind shacl:BlankNodeOrIRI" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:NodeKindConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/d0b958cd33e8ef1bc031edaf2859b44db128a644> ;
+            shacl:value "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^<https://www.iana.org/assignments/media-types/application/vnd.geo+json> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode _:n61b34949ad9b4cf8a05081a32fd9dbccb5 ;
+            shacl:resultMessage "Value does not have class <http://www.w3.org/ns/locn#Geometry>" ;
+            shacl:resultPath ns1:geometry ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:LocationShape/53c8e9f0fc79ab4ed706e31129a2b3e02f7edd22> ;
+            shacl:value "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral ] .
+
+_:N2b96d7bacc1a49f5af46dbda479f3183 a rdfs:Resource,
+        prov:Attribution ;
+    dc1:type <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+    dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+    prov:agent [ a rdfs:Resource,
+                prov:Agent,
+                foaf:Person ;
+            ns1:address [ a rdfs:Resource,
+                        ns1:Address ;
+                    ns1:adminUnitL1 "NL" ;
+                    ns1:adminUnitL2 "UT" ;
+                    ns1:postCode "3800 BP" ;
+                    ns1:postName "Amersfoort" ;
+                    ns1:thoroughfare "Postbus 1600" ] ;
+            org:memberOf [ a rdfs:Resource,
+                        foaf:Organization ;
+                    foaf:name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ;
+            foaf:mbox <mailto:info@cultureelerfgoed.nl> ;
+            foaf:name "InfoDesk"@nl ;
+            foaf:phone <tel:+0334217456> ;
+            foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ] .
+
+_:N63b96c0fdf8d4cd3ba1ec9583e1b70a5 a rdfs:Resource,
+        dcat:CatalogRecord ;
+    dc1:conformsTo [ a dc1:Standard,
+                rdfs:Resource ;
+            dc1:title "ISO 19115"@nl ;
+            owl:versionInfo "Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0"@nl ] ;
+    dc1:modified "2024-09-27"^^xsd:date ;
+    cnt:characterEncoding "UTF-8"^^xsd:string .
+
+_:N729d0b4b08f84967b28fd7acc9ed5a16 a rdfs:Resource,
+        vcard:Address ;
+    vcard:country-name "NL" ;
+    vcard:locality "Amersfoort" ;
+    vcard:postal-code "3800 BP" ;
+    vcard:region "UT" ;
+    vcard:street-address "Postbus 1600" .
+
+_:Nbf8d34f0051748ff88e67147a6e22fa3 a rdfs:Resource,
+        vcard:Individual ;
+    vcard:fn "InfoDesk"@nl ;
+    vcard:hasAddress _:N729d0b4b08f84967b28fd7acc9ed5a16 ;
+    vcard:hasEmail <mailto:info@cultureelerfgoed.nl> ;
+    vcard:hasTelephone <tel:+0334217456> ;
+    vcard:hasURL <https://www.cultureelerfgoed.nl> ;
+    vcard:organization-name "Rijksdienst voor het Cultureel Erfgoed"@nl .
+
+_:n61b34949ad9b4cf8a05081a32fd9dbccb63 a rdfs:Resource,
+        dcat:CatalogRecord ;
+    dc1:conformsTo <http://data.europa.eu/930/> ;
+    dc1:identifier "4e2ef670-cddd-11dd-ad8b-0800200c9a66"^^xsd:string ;
+    dc1:language <http://publications.europa.eu/resource/authority/language/DUT> ;
+    dc1:modified "2024-09-27"^^xsd:date ;
+    dc1:source _:N63b96c0fdf8d4cd3ba1ec9583e1b70a5 ;
+    dcat:contactPoint _:Nbf8d34f0051748ff88e67147a6e22fa3 ;
+    prov:qualifiedAttribution _:N2b96d7bacc1a49f5af46dbda479f3183 ;
+    foaf:primaryTopic <https://services.rce.geovoorziening.nl/www/download/nl.xml> .
+
+_:n61b34949ad9b4cf8a05081a32fd9dbccb5 a dc1:Location,
+        rdfs:Resource ;
+    dcat:bbox "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^geo:geoJSONLiteral,
+        "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral,
+        "POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))"^^geo:wktLiteral,
+        "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^<https://www.iana.org/assignments/media-types/application/vnd.geo+json> ;
+    ns1:geometry "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^geo:geoJSONLiteral,
+        "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral,
+        "POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))"^^geo:wktLiteral,
+        "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^<https://www.iana.org/assignments/media-types/application/vnd.geo+json> .
+
