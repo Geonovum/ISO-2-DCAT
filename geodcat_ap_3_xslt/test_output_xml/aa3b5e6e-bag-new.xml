@@ -74,7 +74,6 @@
                         </locn:address>
                      </rdf:Description>
                   </prov:agent>
-                  <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
                   <dcat:hadRole>
                      <dcat:Role rdf:about="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
                   </dcat:hadRole>
@@ -150,13 +149,8 @@
       </dct:language>
       <dct:spatial rdf:parseType="Resource">
          <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
-         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((2.4807 53.7187,7.9685 53.7187,7.9685 50.6058,2.4807 50.6058,2.4807 53.7187))]]></locn:geometry>
-         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>2.4807 50.6058</gml:lowerCorner><gml:upperCorner>7.9685 53.7187</gml:upperCorner></gml:Envelope>]]></locn:geometry>
-         <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}]]></locn:geometry>
-         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}]]></locn:geometry>
          <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((2.4807 53.7187,7.9685 53.7187,7.9685 50.6058,2.4807 50.6058,2.4807 53.7187))]]></dcat:bbox>
          <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>2.4807 50.6058</gml:lowerCorner><gml:upperCorner>7.9685 53.7187</gml:upperCorner></gml:Envelope>]]></dcat:bbox>
-         <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}]]></dcat:bbox>
          <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}]]></dcat:bbox>
       </dct:spatial>
       <dct:spatial rdf:parseType="Resource">
@@ -165,8 +159,6 @@
       </dct:spatial>
       <dct:temporal>
          <dct:PeriodOfTime>
-            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-01</schema:startDate>
-            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</schema:endDate>
             <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-01</dcat:startDate>
             <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</dcat:endDate>
          </dct:PeriodOfTime>
@@ -424,11 +416,6 @@
                </dcat:DataService>
             </dcat:accessService>
             <dcat:accessURL rdf:resource="https://service.pdok.nl/lv/bag/wms/v2_0?request=getCapabilities&amp;service=WMS"/>
-            <dct:rights>
-               <dct:RightsStatement>
-                  <dct:description xml:lang="nl">Geen gebruiksbeperkingen</dct:description>
-               </dct:RightsStatement>
-            </dct:rights>
             <dct:license>
                <dct:LicenseDocument rdf:about="http://creativecommons.org/publicdomain/mark/1.0/deed.nl"/>
             </dct:license>
@@ -528,7 +515,6 @@
                   </locn:address>
                </rdf:Description>
             </prov:agent>
-            <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/custodian"/>
             <dcat:hadRole>
                <dcat:Role rdf:about="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/custodian"/>
             </dcat:hadRole>

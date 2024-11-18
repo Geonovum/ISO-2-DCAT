@@ -19,11 +19,11 @@
          xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
-   <rdf:Description rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml">
+   <rdf:Description rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62">
       <foaf:isPrimaryTopicOf>
          <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
-            <foaf:primaryTopic rdf:resource="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            <foaf:primaryTopic rdf:resource="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             <dct:conformsTo>
                <dct:Standard rdf:about="http://data.europa.eu/930/"/>
             </dct:conformsTo>
@@ -76,7 +76,6 @@
                         </locn:address>
                      </rdf:Description>
                   </prov:agent>
-                  <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
                   <dcat:hadRole>
                      <dcat:Role rdf:about="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
                   </dcat:hadRole>
@@ -139,19 +138,12 @@
       </dct:language>
       <dct:spatial rdf:parseType="Resource">
          <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
-         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))]]></locn:geometry>
-         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>]]></locn:geometry>
-         <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></locn:geometry>
-         <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></locn:geometry>
          <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))]]></dcat:bbox>
          <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>]]></dcat:bbox>
-         <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></dcat:bbox>
          <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></dcat:bbox>
       </dct:spatial>
       <dct:temporal>
          <dct:PeriodOfTime>
-            <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-02T00:00:00</schema:startDate>
-            <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-01T00:00:00</schema:endDate>
             <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-02T00:00:00</dcat:startDate>
             <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-01T00:00:00</dcat:endDate>
          </dct:PeriodOfTime>
@@ -179,7 +171,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -202,7 +194,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -225,7 +217,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -248,7 +240,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -271,7 +263,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -294,7 +286,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -322,7 +314,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -345,7 +337,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -368,7 +360,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -389,11 +381,11 @@
          </prov:Activity>
       </prov:wasUsedBy>
       <dcat:distribution>
-         <dcat:Distribution rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e887">
+         <dcat:Distribution rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e887">
             <dct:title xml:lang="nl">Townscapes</dct:title>
             <dct:description xml:lang="nl">accessPoint</dct:description>
             <dcat:accessService>
-               <dcat:DataService rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml/DS/d0e887">
+               <dcat:DataService rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/DS/d0e887">
                   <dct:title xml:lang="nl">Townscapes</dct:title>
                   <dcat:endpointURL rdf:resource="https://services.rce.geovoorziening.nl/rce/wms"/>
                   <dcat:endpointDescription rdf:resource="https://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities"/>
@@ -403,11 +395,6 @@
                </dcat:DataService>
             </dcat:accessService>
             <dcat:accessURL rdf:resource="https://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities"/>
-            <dct:rights>
-               <dct:RightsStatement>
-                  <dct:description xml:lang="nl">Met de ligging van de begrenzingen van de stads- en dorpsgezichten dient behoedzaam te worden omgegaan. De kwaliteit is namelijk wisselend.</dct:description>
-               </dct:RightsStatement>
-            </dct:rights>
             <dct:accessRights>
                <dct:RightsStatement rdf:about="https://creativecommons.org/licenses/by/4.0/deed.nl"/>
             </dct:accessRights>
@@ -422,11 +409,11 @@
          </dcat:Distribution>
       </dcat:distribution>
       <dcat:distribution>
-         <dcat:Distribution rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml/d0e921">
+         <dcat:Distribution rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e921">
             <dct:title xml:lang="nl">Townscapes</dct:title>
             <dct:description xml:lang="nl">accessPoint</dct:description>
             <dcat:accessService>
-               <dcat:DataService rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml/DS/d0e921">
+               <dcat:DataService rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/DS/d0e921">
                   <dct:title xml:lang="nl">Townscapes</dct:title>
                   <dcat:endpointURL rdf:resource="https://services.rce.geovoorziening.nl/rce/wfs"/>
                   <dcat:endpointDescription rdf:resource="https://services.rce.geovoorziening.nl/rce/wfs?request=GetCapabilities"/>
@@ -436,11 +423,6 @@
                </dcat:DataService>
             </dcat:accessService>
             <dcat:accessURL rdf:resource="https://services.rce.geovoorziening.nl/rce/wfs?request=GetCapabilities"/>
-            <dct:rights>
-               <dct:RightsStatement>
-                  <dct:description xml:lang="nl">Met de ligging van de begrenzingen van de stads- en dorpsgezichten dient behoedzaam te worden omgegaan. De kwaliteit is namelijk wisselend.</dct:description>
-               </dct:RightsStatement>
-            </dct:rights>
             <dct:accessRights>
                <dct:RightsStatement rdf:about="https://creativecommons.org/licenses/by/4.0/deed.nl"/>
             </dct:accessRights>
@@ -517,7 +499,6 @@
                   </locn:address>
                </rdf:Description>
             </prov:agent>
-            <dct:type rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
             <dcat:hadRole>
                <dcat:Role rdf:about="http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact"/>
             </dcat:hadRole>

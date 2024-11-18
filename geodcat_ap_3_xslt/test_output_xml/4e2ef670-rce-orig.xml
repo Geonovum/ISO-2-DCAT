@@ -19,11 +19,11 @@
          xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
-   <rdf:Description rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml">
+   <rdf:Description rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62">
       <foaf:isPrimaryTopicOf>
          <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
-            <foaf:primaryTopic rdf:resource="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+            <foaf:primaryTopic rdf:resource="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             <dct:conformsTo>
                <dct:Standard rdf:about="http://data.europa.eu/930/"/>
             </dct:conformsTo>
@@ -159,7 +159,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -182,7 +182,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -205,7 +205,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -228,7 +228,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -251,7 +251,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -274,7 +274,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -302,7 +302,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -325,7 +325,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
@@ -348,7 +348,7 @@
       <prov:wasUsedBy>
          <prov:Activity>
             <prov:used>
-               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/nl.xml"/>
+               <prov:Entity rdf:about="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
             </prov:used>
             <prov:qualifiedAssociation rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>

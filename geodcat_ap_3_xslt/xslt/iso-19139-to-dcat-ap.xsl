@@ -51,6 +51,9 @@
      
 -->
 
+<!-- functional changes are annotated with @NH  
+Other than that changes are in formatting to help readability and IDE functionality-->
+
 <xsl:transform
   xmlns:adms="http://www.w3.org/ns/adms#"
   xmlns:cnt="http://www.w3.org/2011/content#"
@@ -197,12 +200,12 @@
   
   <!-- Uncomment to include deprecated mappings from the output -->
   
-  <xsl:param name="include-deprecated">yes</xsl:param>
+  <!-- <xsl:param name="include-deprecated">yes</xsl:param> -->
   
   <!-- Uncomment to exclude deprecated mappings from the output -->
-  <!--
+  
        <xsl:param name="include-deprecated">no</xsl:param>
-  -->
+ 
   
   <!-- Parameter $CoupledResourceLookUp -->
   <!--
@@ -3107,6 +3110,7 @@
               <xsl:choose>
                 <xsl:when test="$ResourceType != 'service'">
                   <!-- <dcat:theme rdf:resource="{gmx:Anchor/@xlink:href}"/> -->
+                  <!-- @NH: Theme constructor with skos:Concept -->
                   <dcat:theme>
                     <skos:Concept >
                       <skos:prefLabel xml:lang="{$MetadataLanguage}">

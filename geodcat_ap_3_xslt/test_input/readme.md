@@ -1,5 +1,4 @@
-## Test input
-
+# Test input
 
 Files from Nationaal Georegister.
 
@@ -10,21 +9,25 @@ Dataset from RCE. The XML validates against the Geonovum [validator for iso-1911
 One edit has been made to the xml file to make sure it works as intended as a testfile for the iso-19139-to-dcat-ap.xsl
 
 original:
-```
+
+```xml
 <gmd:MD_Identifier>
     <gmd:code>
         <gmx:Anchor xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://services.rce.geovoorziening.nl/www/download/nl.xml">e39bd6e0-7651-11e0-a1f0-0800200c9a62</gmx:Anchor>
     </gmd:code>
 </gmd:MD_Identifier>
 ```
+
 adapted:
-```
+
+```xml
 <gmd:MD_Identifier>
     <gmd:code>
         <gmx:Anchor xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62">e39bd6e0-7651-11e0-a1f0-0800200c9a62</gmx:Anchor>
     </gmd:code>
 </gmd:MD_Identifier>
 ```
+
 Note: this those not satisfy the requirements completely because the xlink:href is not resolvable...
 
 ---

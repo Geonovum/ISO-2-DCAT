@@ -50,7 +50,7 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
 
 <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> a dcat:Role .
 
-<https://services.rce.geovoorziening.nl/www/download/nl.xml> a dcat:Dataset,
+<https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> a dcat:Dataset,
         prov:Entity ;
     geodcatap:referenceSystem <http://www.opengis.net/def/crs/EPSG/0/28992> ;
     geodcatap:resourceType <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset> ;
@@ -162,16 +162,6 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                     foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ] ] ;
     prov:wasUsedBy [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
-                    dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-04-26"^^xsd:date ;
-                                    dcterms:title "D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
                     dcterms:description "See the referenced specification"@nl ;
                     dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
             prov:qualifiedAssociation [ a prov:Association ;
@@ -179,27 +169,7 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             prov:wasDerivedFrom [ a prov:Entity ;
                                     dcterms:issued "2010-12-08"^^xsd:date ;
                                     dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "See the referenced specification"@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-12-08"^^xsd:date ;
-                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-04-26"^^xsd:date ;
-                                    dcterms:title "D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
                     dcterms:description "De data is conform de in het document beschreven gegevensstructuur en -semantiek."@nl ;
@@ -209,17 +179,7 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             prov:wasDerivedFrom [ a prov:Entity ;
                                     dcterms:issued "2024-04-22"^^xsd:date ;
                                     dcterms:title "Stads- en Dorpsgezichten gegevensstructuur en -semantiek"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-04-26"^^xsd:date ;
-                                    dcterms:title "D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
                     dcterms:description "See the referenced specification"@nl ;
@@ -229,7 +189,37 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             prov:wasDerivedFrom [ a prov:Entity ;
                                     dcterms:issued "2010-12-08"^^xsd:date ;
                                     dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-04-26"^^xsd:date ;
+                                    dcterms:title "D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "See the referenced specification"@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-04-26"^^xsd:date ;
+                                    dcterms:title "D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
                     dcterms:description "De data is conform de in het document beschreven gegevensstructuur en -semantiek."@nl ;
@@ -239,7 +229,17 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             prov:wasDerivedFrom [ a prov:Entity ;
                                     dcterms:issued "2024-04-22"^^xsd:date ;
                                     dcterms:title "Stads- en Dorpsgezichten gegevensstructuur en -semantiek"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ],
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-04-26"^^xsd:date ;
+                                    dcterms:title "D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
                     dcterms:description "De data is conform de in het document beschreven gegevensstructuur en -semantiek."@nl ;
@@ -249,7 +249,7 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             prov:wasDerivedFrom [ a prov:Entity ;
                                     dcterms:issued "2024-04-22"^^xsd:date ;
                                     dcterms:title "Stads- en Dorpsgezichten gegevensstructuur en -semantiek"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/nl.xml> ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ] ;
     foaf:isPrimaryTopicOf [ a dcat:CatalogRecord ;
             dcterms:conformsTo geodcatap: ;
             dcterms:identifier "4e2ef670-cddd-11dd-ad8b-0800200c9a66"^^xsd:string ;
@@ -290,6 +290,6 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             foaf:name "InfoDesk"@nl ;
                             foaf:phone <tel:+0334217456> ;
                             foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ] ] ;
-            foaf:primaryTopic <https://services.rce.geovoorziening.nl/www/download/nl.xml> ] ;
+            foaf:primaryTopic <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ] ;
     foaf:page <https://linkeddata.cultureelerfgoed.nl/rce/-/stories/High-Value-datasets> .
 
