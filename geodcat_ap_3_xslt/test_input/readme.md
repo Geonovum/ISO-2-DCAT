@@ -28,7 +28,7 @@ adapted:
 </gmd:MD_Identifier>
 ```
 
-Note: this those not satisfy the requirements completely because the xlink:href is not resolvable...
+Note: this does not satisfy the requirements completely because the xlink:href is not resolvable...
 
 ---
 
