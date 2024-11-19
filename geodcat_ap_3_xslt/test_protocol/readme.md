@@ -58,5 +58,5 @@ As primary 'techstack' python and Jupyter Notebook are chosen:
     In the UML vs RDF realm of information modelling we are quite aware of the 'paradigm shift' and 'Closed World' vs 'Open World' modelling approach and it's consequences.
     For Metadata models between ISO/XML and DCAT we are experiencing similar differences.
     In a typical iso-19115 dataset description all elements (including catalogs and distributions) are described within the context of the individual file.
-    However, DCAT is fundamentally positioned as a standard to describe 'federated datastructures' therefore datasets, distributions etc are separate classes. 
+    However, DCAT is fundamentally positioned as a standard to describe 'federated datastructures' therefore datasets, distributions etc are separate classes.
     The XSLT approach is not 'aware' of this and describes the 'federated structure' from a 'single file' perspective, this is bound to lead to unintended consequences.
