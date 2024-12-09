@@ -1063,6 +1063,8 @@ Other than that changes are in formatting to help readability and IDE functional
       <xsl:if test="$MetadataCharacterEncoding != '' or $MetadataStandardURI != '' or $MetadataStandardName != ''">
         <dct:source rdf:parseType="Resource">
           <rdf:type rdf:resource="{$dcat}CatalogRecord"/>
+          <!-- @NH the Source Catalog record (iso-19115) points to the same dataset resource... -->
+          <foaf:primaryTopic rdf:resource="{$ResourceUri}"/>
           <!-- Metadata date -->
           <xsl:if test="$MetadataDate != ''">
             <dct:modified rdf:datatype="{$xsd}date">
@@ -1127,6 +1129,8 @@ Other than that changes are in formatting to help readability and IDE functional
       <xsl:choose>
         <xsl:when test="$ResourceType = 'dataset'">
           <rdf:type rdf:resource="{$dcat}Dataset"/>
+          <!-- @NH  also tyype as dcat:Resource for shacl validation-->
+          <rdf:type rdf:resource="{$dcat}Resource"/>
         </xsl:when>
         <xsl:when test="$ResourceType = 'series'">
           <!-- DEPRECATED: Mapping kept for backward compatibility with GeoDCAT-AP v2.* and earlier versions -->
@@ -2582,8 +2586,9 @@ Other than that changes are in formatting to help readability and IDE functional
       </xsl:if>
       <!-- Mapping added for compliance with DCAT-AP 2 -->
       <!-- Recommended geometry encodings -->
-      <dcat:bbox rdf:datatype="{$gsp}wktLiteral"><xsl:value-of select="$WKTLiteral"/></dcat:bbox>
-      <dcat:bbox rdf:datatype="{$gsp}gmlLiteral"><xsl:value-of select="$GMLLiteral"/></dcat:bbox>
+      <!-- @NH disabled wkt and gml in favorite of geojson -->
+      <!-- <dcat:bbox rdf:datatype="{$gsp}wktLiteral"><xsl:value-of select="$WKTLiteral"/></dcat:bbox>
+      <dcat:bbox rdf:datatype="{$gsp}gmlLiteral"><xsl:value-of select="$GMLLiteral"/></dcat:bbox> -->
       <!-- Additional geometry encodings -->
       <!-- DEPRECATED: Mapping kept for backward compatibility with GeoDCAT-AP v1.* -->
       <xsl:if test="$include-deprecated = 'yes'">
