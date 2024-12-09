@@ -10,8 +10,7 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -36,6 +35,40 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
     dcterms:description "accessPoint"@nl ;
     dcterms:title "Atom feed Townscapes"@nl .
 
+<https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/DS/d0e887> a dcat:DataService ;
+    geodcatap:serviceProtocol <http://www.opengeospatial.org/standards/wms> ;
+    dcterms:title "Townscapes"@nl ;
+    dcat:endpointDescription <https://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities> ;
+    dcat:endpointURL <https://services.rce.geovoorziening.nl/rce/wms> .
+
+<https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/DS/d0e921> a dcat:DataService ;
+    geodcatap:serviceProtocol <http://www.opengeospatial.org/standards/wfs> ;
+    dcterms:title "Townscapes"@nl ;
+    dcat:endpointDescription <https://services.rce.geovoorziening.nl/rce/wfs?request=GetCapabilities> ;
+    dcat:endpointURL <https://services.rce.geovoorziening.nl/rce/wfs> .
+
+<https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e887> a dcat:Distribution ;
+    dcterms:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,
+        <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations>,
+        <https://creativecommons.org/licenses/by/4.0/deed.nl> ;
+    dcterms:description "accessPoint"@nl ;
+    dcterms:title "Townscapes"@nl ;
+    cnt:characterEncoding "UTF-8"^^xsd:string ;
+    adms:representationTechnique <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ;
+    dcat:accessService <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/DS/d0e887> ;
+    dcat:accessURL <https://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities> .
+
+<https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e921> a dcat:Distribution ;
+    dcterms:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,
+        <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations>,
+        <https://creativecommons.org/licenses/by/4.0/deed.nl> ;
+    dcterms:description "accessPoint"@nl ;
+    dcterms:title "Townscapes"@nl ;
+    cnt:characterEncoding "UTF-8"^^xsd:string ;
+    adms:representationTechnique <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ;
+    dcat:accessService <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/DS/d0e921> ;
+    dcat:accessURL <https://services.rce.geovoorziening.nl/rce/wfs?request=GetCapabilities> .
+
 <https://www.cultureelerfgoed.nl/onderwerpen/bronnen-en-kaarten/overzicht/kaart-van-beschermde-stads--en-dorpsgezichten> a foaf:Document ;
     dcterms:description "accessPoint"@nl ;
     dcterms:title "Kaart met stads- en dorpsgezichten"@nl .
@@ -44,13 +77,14 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
 
 <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations> a dcterms:RightsStatement .
 
+<http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> a dcat:Role .
+
 <http://publications.europa.eu/resource/authority/language/DUT> a dcterms:LinguisticSystem .
 
 <https://creativecommons.org/licenses/by/4.0/deed.nl> a dcterms:RightsStatement .
 
-<http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> a dcat:Role .
-
 <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> a dcat:Dataset,
+        dcat:Resource,
         prov:Entity ;
     geodcatap:referenceSystem <http://www.opengis.net/def/crs/EPSG/0/28992> ;
     geodcatap:resourceType <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset> ;
@@ -66,17 +100,8 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
     dcterms:provenance [ a dcterms:ProvenanceStatement ;
             dcterms:description "Voor een klein aantal gebieden zijn bij het digitaliseren van de begrenzing de GBKN en de kadastrale percelen uit het LKI als referentieondergronden gebruikt. Voor deze gebieden geldt dat de begrenzing wat ligging betreft identiek is aan de begrenzing die op de officiele (papieren) kaart staat die bij het aanwijzingsbesluit en -toelichting is gevoegd. Zie het veld Ondergrond. De ligging van de begrenzingen in de provincies Friesland en Limburg is visueel vergeleken met die in de aanwijzingskaarten en waar nodig verbeterd. Hierbij is gebruik gemaakt van de topografische kaart op schaal 1:10.000 (TOP10vector). De verbeteringen hebben de kwaliteit van de ligging van de begrenzingen verhoogd maar nemen niet het risico weg dat de ligging van de begrenzingen mogelijk tot maximaal zo'n 20 meter afwijkt van die op de officiele aanwijzingskaarten. Voor de overige provincies is deze controle niet uitgevoerd. De kwaliteit van de ligging van de begrenzingen is voor deze provincies onduidelijk. Op basis van de ervaringen opgedaan tijdens het werken met de kaartlaag en bij de controle van de begrenzingen in Friesland en Limburg, kan de maximale afwijking in de ligging van de begrenzing worden ingeschat op ongeveer 100 meter. Voor meer informatie over de beschrijvende gegevens van de stads- en dorpsgezichten en de ligging van de begrenzing kan contact opgenomen worden met de Rijksdienst voor het Cultureel Erfgoed, telefoon: 033-4217456 of info@cultureelerfgoed.nl"@nl ] ;
     dcterms:spatial [ a dcterms:Location ;
-            dcat:bbox "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^geo:geoJSONLiteral,
-                "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral,
-                "POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))"^^geo:wktLiteral,
-                "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^<https://www.iana.org/assignments/media-types/application/vnd.geo+json> ;
-            locn:geometry "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^geo:geoJSONLiteral,
-                "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral,
-                "POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))"^^geo:wktLiteral,
-                "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^<https://www.iana.org/assignments/media-types/application/vnd.geo+json> ] ;
+            dcat:bbox "{\"type\":\"Polygon\",\"coordinates\":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}"^^geo:geoJSONLiteral ] ;
     dcterms:temporal [ a dcterms:PeriodOfTime ;
-            schema1:endDate "2020-07-01T00:00:00"^^xsd:dateTime ;
-            schema1:startDate "2019-12-02T00:00:00"^^xsd:dateTime ;
             dcat:endDate "2020-07-01T00:00:00"^^xsd:dateTime ;
             dcat:startDate "2019-12-02T00:00:00"^^xsd:dateTime ] ;
     dcterms:title "Stads- en Dorpsgezichten"@nl ;
@@ -92,42 +117,8 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
             vcard:hasTelephone <tel:+0334217456> ;
             vcard:hasURL <https://www.cultureelerfgoed.nl> ;
             vcard:organization-name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ;
-    dcat:distribution [ a dcat:Distribution ;
-            dcterms:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,
-                <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations>,
-                <https://creativecommons.org/licenses/by/4.0/deed.nl> ;
-            dcterms:description "accessPoint"@nl ;
-            dcterms:format [ a dcterms:MediaType ;
-                    rdfs:label "ESRI Shape" ] ;
-            dcterms:rights [ a dcterms:RightsStatement ;
-                    dcterms:description "Met de ligging van de begrenzingen van de stads- en dorpsgezichten dient behoedzaam te worden omgegaan. De kwaliteit is namelijk wisselend."@nl ] ;
-            dcterms:title "Townscapes"@nl ;
-            cnt:characterEncoding "UTF-8"^^xsd:string ;
-            adms:representationTechnique <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ;
-            dcat:accessService [ a dcat:DataService ;
-                    geodcatap:serviceProtocol <http://www.opengeospatial.org/standards/wms> ;
-                    dcterms:title "Townscapes"@nl ;
-                    dcat:endpointDescription <https://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities> ;
-                    dcat:endpointURL <https://services.rce.geovoorziening.nl/rce/wms> ] ;
-            dcat:accessURL <https://services.rce.geovoorziening.nl/rce/wms?request=GetCapabilities> ],
-        [ a dcat:Distribution ;
-            dcterms:accessRights <http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply>,
-                <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations>,
-                <https://creativecommons.org/licenses/by/4.0/deed.nl> ;
-            dcterms:description "accessPoint"@nl ;
-            dcterms:format [ a dcterms:MediaType ;
-                    rdfs:label "ESRI Shape" ] ;
-            dcterms:rights [ a dcterms:RightsStatement ;
-                    dcterms:description "Met de ligging van de begrenzingen van de stads- en dorpsgezichten dient behoedzaam te worden omgegaan. De kwaliteit is namelijk wisselend."@nl ] ;
-            dcterms:title "Townscapes"@nl ;
-            cnt:characterEncoding "UTF-8"^^xsd:string ;
-            adms:representationTechnique <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ;
-            dcat:accessService [ a dcat:DataService ;
-                    geodcatap:serviceProtocol <http://www.opengeospatial.org/standards/wfs> ;
-                    dcterms:title "Townscapes"@nl ;
-                    dcat:endpointDescription <https://services.rce.geovoorziening.nl/rce/wfs?request=GetCapabilities> ;
-                    dcat:endpointURL <https://services.rce.geovoorziening.nl/rce/wfs> ] ;
-            dcat:accessURL <https://services.rce.geovoorziening.nl/rce/wfs?request=GetCapabilities> ] ;
+    dcat:distribution <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e887>,
+        <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e921> ;
     dcat:keyword "architectuurgeschiedenis"@nl,
         "basisset NOVEX"@nl,
         "bouwkunde"@nl,
@@ -136,15 +127,22 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
         "stedenbouwkunde"@nl ;
     dcat:landingPage <https://services.rce.geovoorziening.nl/rce_download/download/data/Stads_en_Dorpsgezichten_nl.xml>,
         <https://www.cultureelerfgoed.nl/onderwerpen/bronnen-en-kaarten/overzicht/kaart-van-beschermde-stads--en-dorpsgezichten> ;
-    dcat:theme <http://data.europa.eu/eli/reg_impl/2023/138/oj>,
-        <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national>,
-        <http://www.eionet.europa.eu/gemet/nl/inspire-theme/ps>,
-        <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021> ;
+    dcat:theme [ a skos:Concept ;
+            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/ps> ;
+            skos:prefLabel "Beschermde gebieden"@nl ],
+        [ a skos:Concept ;
+            dcterms:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            skos:prefLabel "HVD"@nl ],
+        [ a skos:Concept ;
+            dcterms:source <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021> ;
+            skos:prefLabel "Aardobservatie en milieu"@nl ],
+        [ a skos:Concept ;
+            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
+            skos:prefLabel "Nationaal"@nl ] ;
     dqv:hasQualityMeasurement [ a dqv:QualityMeasurement ;
             dqv:isMeasurementOf geodcatap:spatialResolutionAsScale ;
             dqv:value 0.0001 ] ;
     prov:qualifiedAttribution [ a prov:Attribution ;
-            dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
             dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
             prov:agent [ a prov:Agent,
                         foaf:Person ;
@@ -162,56 +160,6 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                     foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ] ] ;
     prov:wasUsedBy [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
-                    dcterms:description "See the referenced specification"@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-12-08"^^xsd:date ;
-                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "De data is conform de in het document beschreven gegevensstructuur en -semantiek."@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2024-04-22"^^xsd:date ;
-                                    dcterms:title "Stads- en Dorpsgezichten gegevensstructuur en -semantiek"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "See the referenced specification"@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-12-08"^^xsd:date ;
-                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-04-26"^^xsd:date ;
-                                    dcterms:title "D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "See the referenced specification"@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-12-08"^^xsd:date ;
-                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
-            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
                     dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
                     dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
             prov:qualifiedAssociation [ a prov:Association ;
@@ -242,6 +190,26 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
             prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
+                    dcterms:description "See the referenced specification"@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "See the referenced specification"@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
                     dcterms:description "De data is conform de in het document beschreven gegevensstructuur en -semantiek."@nl ;
                     dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
             prov:qualifiedAssociation [ a prov:Association ;
@@ -249,6 +217,36 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             prov:wasDerivedFrom [ a prov:Entity ;
                                     dcterms:issued "2024-04-22"^^xsd:date ;
                                     dcterms:title "Stads- en Dorpsgezichten gegevensstructuur en -semantiek"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De dataset bevat de attributen en featuretypes uit de specificaties maar komt hier modelmatig niet mee overeen."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-04-26"^^xsd:date ;
+                                    dcterms:title "D2.8.I.9 INSPIRE Data Specification on Protected Sites - Guidelines"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De data is conform de in het document beschreven gegevensstructuur en -semantiek."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2024-04-22"^^xsd:date ;
+                                    dcterms:title "Stads- en Dorpsgezichten gegevensstructuur en -semantiek"@nl ] ] ] ;
+            prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "See the referenced specification"@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
             prov:used <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ] ;
     foaf:isPrimaryTopicOf [ a dcat:CatalogRecord ;
             dcterms:conformsTo geodcatap: ;
@@ -260,7 +258,8 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             dcterms:title "ISO 19115"@nl ;
                             owl:versionInfo "Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0"@nl ] ;
                     dcterms:modified "2024-09-27"^^xsd:date ;
-                    cnt:characterEncoding "UTF-8"^^xsd:string ] ;
+                    cnt:characterEncoding "UTF-8"^^xsd:string ;
+                    foaf:primaryTopic <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ] ;
             dcat:contactPoint [ a vcard:Individual ;
                     vcard:fn "InfoDesk"@nl ;
                     vcard:hasAddress [ a vcard:Address ;
@@ -274,7 +273,6 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                     vcard:hasURL <https://www.cultureelerfgoed.nl> ;
                     vcard:organization-name "Rijksdienst voor het Cultureel Erfgoed"@nl ] ;
             prov:qualifiedAttribution [ a prov:Attribution ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
                     dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
                     prov:agent [ a prov:Agent,
                                 foaf:Person ;

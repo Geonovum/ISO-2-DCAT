@@ -82,6 +82,7 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
 <http://publications.europa.eu/resource/authority/language/DUT> a dcterms:LinguisticSystem .
 
 <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> a dcat:Dataset,
+        dcat:Resource,
         prov:Entity ;
     geodcatap:custodian [ a prov:Agent,
                 foaf:Person ;
@@ -116,9 +117,7 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
     dcterms:spatial [ a dcterms:Location ;
             skos:prefLabel "Nederland"@nl ],
         [ a dcterms:Location ;
-            dcat:bbox "{\"type\":\"Polygon\",\"coordinates\":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}"^^geo:geoJSONLiteral,
-                "<gml:Envelope srsName=\"http://www.opengis.net/def/crs/OGC/1.3/CRS84\"><gml:lowerCorner>2.4807 50.6058</gml:lowerCorner><gml:upperCorner>7.9685 53.7187</gml:upperCorner></gml:Envelope>"^^geo:gmlLiteral,
-                "POLYGON((2.4807 53.7187,7.9685 53.7187,7.9685 50.6058,2.4807 50.6058,2.4807 53.7187))"^^geo:wktLiteral ] ;
+            dcat:bbox "{\"type\":\"Polygon\",\"coordinates\":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}"^^geo:geoJSONLiteral ] ;
     dcterms:temporal [ a dcterms:PeriodOfTime ;
             dcat:endDate "2025-12-31"^^xsd:date ;
             dcat:startDate "1996-01-01"^^xsd:date ] ;
@@ -141,20 +140,20 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
         <https://service.pdok.nl/lv/bag/atom/bag.xml>,
         <https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-api-individuele-bevragingen> ;
     dcat:theme [ a skos:Concept ;
-            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/ad> ;
-            skos:prefLabel "Adressen"@nl ],
+            dcterms:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
+            skos:prefLabel "HVD"@nl ],
         [ a skos:Concept ;
             dcterms:source <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bna/c_dd313021> ;
             skos:prefLabel "Geodata"@nl ],
         [ a skos:Concept ;
-            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
-            skos:prefLabel "Nationaal"@nl ],
-        [ a skos:Concept ;
-            dcterms:source <http://data.europa.eu/eli/reg_impl/2023/138/oj> ;
-            skos:prefLabel "HVD"@nl ],
+            dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/ad> ;
+            skos:prefLabel "Adressen"@nl ],
         [ a skos:Concept ;
             dcterms:source <http://www.eionet.europa.eu/gemet/nl/inspire-theme/bu> ;
-            skos:prefLabel "Gebouwen"@nl ] ;
+            skos:prefLabel "Gebouwen"@nl ],
+        [ a skos:Concept ;
+            dcterms:source <http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national> ;
+            skos:prefLabel "Nationaal"@nl ] ;
     dqv:hasQualityMeasurement [ a dqv:QualityMeasurement ;
             dqv:isMeasurementOf geodcatap:spatialResolutionAsScale ;
             dqv:value 0.001 ] ;
@@ -176,13 +175,23 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                     foaf:workplaceHomepage <https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag> ] ] ;
     prov:wasUsedBy [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
-                    dcterms:description "Structuur en inhoud van de dataset wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:description "De hier gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "Inhoud en structuur wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
                     dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
             prov:qualifiedAssociation [ a prov:Association ;
                     prov:hadPlan [ a prov:Plan ;
                             prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2013-02-04"^^xsd:date ;
-                                    dcterms:title "INSPIRE Data Specification on Buildings - Draft Technical Guidelines"@nl ] ] ] ;
+                                    dcterms:issued "2010-05-03"^^xsd:date ;
+                                    dcterms:title "INSPIRE Data Specification on Addresses - Guidelines"@nl ] ] ] ;
             prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
@@ -193,6 +202,16 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             prov:wasDerivedFrom [ a prov:Entity ;
                                     dcterms:issued "2013-02-04"^^xsd:date ;
                                     dcterms:title "INSPIRE Data Specification on Buildings - Draft Technical Guidelines"@nl ] ] ] ;
+            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
+        [ a prov:Activity ;
+            prov:generated [ a prov:Entity ;
+                    dcterms:description "De hier gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
+            prov:qualifiedAssociation [ a prov:Association ;
+                    prov:hadPlan [ a prov:Plan ;
+                            prov:wasDerivedFrom [ a prov:Entity ;
+                                    dcterms:issued "2010-12-08"^^xsd:date ;
+                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
             prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
@@ -216,33 +235,13 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
             prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
-                    dcterms:description "De hier gehanteerde domeinen zijn conform Nederlands model."@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-12-08"^^xsd:date ;
-                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
-            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "Inhoud en structuur wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
+                    dcterms:description "Structuur en inhoud van de dataset wijken af van de INSPIRE-specificatie. De gehanteerde domeinen zijn conform Nederlands model."@nl ;
                     dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/notConformant> ] ;
             prov:qualifiedAssociation [ a prov:Association ;
                     prov:hadPlan [ a prov:Plan ;
                             prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-05-03"^^xsd:date ;
-                                    dcterms:title "INSPIRE Data Specification on Addresses - Guidelines"@nl ] ] ] ;
-            prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
-        [ a prov:Activity ;
-            prov:generated [ a prov:Entity ;
-                    dcterms:description "De hier gehanteerde domeinen zijn conform Nederlands model."@nl ;
-                    dcterms:type <http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity/conformant> ] ;
-            prov:qualifiedAssociation [ a prov:Association ;
-                    prov:hadPlan [ a prov:Plan ;
-                            prov:wasDerivedFrom [ a prov:Entity ;
-                                    dcterms:issued "2010-12-08"^^xsd:date ;
-                                    dcterms:title "VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens"@nl ] ] ] ;
+                                    dcterms:issued "2013-02-04"^^xsd:date ;
+                                    dcterms:title "INSPIRE Data Specification on Buildings - Draft Technical Guidelines"@nl ] ] ] ;
             prov:used <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ],
         [ a prov:Activity ;
             prov:generated [ a prov:Entity ;
@@ -274,7 +273,8 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
                             dcterms:title "ISO 19115"@nl ;
                             owl:versionInfo "Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0"@nl ] ;
                     dcterms:modified "2024-08-26"^^xsd:date ;
-                    cnt:characterEncoding "UTF-8"^^xsd:string ] ;
+                    cnt:characterEncoding "UTF-8"^^xsd:string ;
+                    foaf:primaryTopic <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ] ;
             dcat:contactPoint [ a vcard:Individual ;
                     vcard:fn "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ;
                     vcard:hasAddress [ a vcard:Address ;

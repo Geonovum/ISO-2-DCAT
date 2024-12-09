@@ -84,6 +84,7 @@
             <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4e2ef670-cddd-11dd-ad8b-0800200c9a66</dct:identifier>
             <dct:source rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+               <foaf:primaryTopic rdf:resource="https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62"/>
                <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-27</dct:modified>
                <cnt:characterEncoding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTF-8</cnt:characterEncoding>
                <dct:conformsTo rdf:parseType="Resource">
@@ -95,6 +96,7 @@
          </rdf:Description>
       </foaf:isPrimaryTopicOf>
       <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
       <geodcatap:resourceType rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset"/>
       <dct:title xml:lang="nl">Stads- en Dorpsgezichten</dct:title>
       <dct:description xml:lang="nl">De Stads- en Dorpsgezichtenkaartlaag bevat alle gebieden waarvoor de procedure is gestart om het gebied aan te wijzen als rijksbeschermd stads- of dorpsgezicht (ex artikel 35 van de Monumentenwet 1988). In de default weergave van de INSPIRE Web Map Service worden alleen de aangewezen stads- en dorpsgezichten getoond. De kwaliteit van de ligging van de begrenzing van de stads- en dorpsgezichten is wisselend. Zie de informatie over de datakwaliteit.</dct:description>
@@ -138,8 +140,6 @@
       </dct:language>
       <dct:spatial rdf:parseType="Resource">
          <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
-         <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((2.4595 53.7671,8.0096 53.7671,8.0096 50.5549,2.4595 50.5549,2.4595 53.7671))]]></dcat:bbox>
-         <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>2.4595 50.5549</gml:lowerCorner><gml:upperCorner>8.0096 53.7671</gml:upperCorner></gml:Envelope>]]></dcat:bbox>
          <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[2.4595,53.7671],[8.0096,53.7671],[8.0096,50.5549],[2.4595,50.5549],[2.4595,53.7671]]]}]]></dcat:bbox>
       </dct:spatial>
       <dct:temporal>

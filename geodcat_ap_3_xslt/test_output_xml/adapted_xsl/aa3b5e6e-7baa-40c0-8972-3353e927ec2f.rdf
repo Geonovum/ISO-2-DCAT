@@ -82,6 +82,7 @@
             <dct:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aa3b5e6e-7baa-40c0-8972-3353e927ec2f</dct:identifier>
             <dct:source rdf:parseType="Resource">
                <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+               <foaf:primaryTopic rdf:resource="http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66"/>
                <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-08-26</dct:modified>
                <cnt:characterEncoding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTF-8</cnt:characterEncoding>
                <dct:conformsTo rdf:parseType="Resource">
@@ -93,6 +94,7 @@
          </rdf:Description>
       </foaf:isPrimaryTopicOf>
       <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
       <geodcatap:resourceType rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset"/>
       <dct:title xml:lang="nl">Basisregistratie Adressen en gebouwen (BAG)</dct:title>
       <dct:description xml:lang="nl">De gegevens bestaan uit BAG-panden en een deelselectie van BAG-gegevens van deze panden en de zich daarin bevindende verblijfsobjecten. Ook de ligplaatsen en standplaatsen zijn hierin opgenomen met een deelselectie van BAG-gegevens. De gegevens van de nummeraanduiding zijn in deze services onderdeel van de adresseerbare objecten, hierbij wordt slechts 1 adres opgenomen, dus objecten met meerdere adressen (hoofd- en nevenadressen) zijn niet compleet. In deze services zitten dus niet alle BAG adressen. Aangezien niet alle BAG gegevens worden geleverd, adviseren wij u om de actuele gegevens in één van de BAG producten te controleren. Raadpleeg de BAG Viewer voor enkele bevragingen van BAG gegevens. Een overzicht van alle beschikbare producten kunt u vinden op de website https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag . De BAG WMS, BAG WFS en BAG API Individuele bevragingen zijn expliciet niet bedoeld voor bulkbevragingen waarmee veel gegevens in één keer worden opgevraagd en in een database worden verwerkt. Wilt u in één keer meer gegevens opvragen, dan raden wij u aan om gebruik te maken van onze BAG Geopackage (https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-geopackage) of BAG extract (https://www.kadaster.nl/zakelijk/producten/adressen-en-gebouwen/bag-2.0-extract). De BAG Geopackage en de BAG extract kunt u downloaden via de Atom downloadservice: https://service.pdok.nl/lv/bag/atom/bag.xml . Deze dataset wordt ook gebruikt voor het ontsluiten van het INSPIRE thema Gebouwen. Het betreft gebouwcontouren, constructieve onderdelen van gebouwen en ruimtelijke barrieres. Dit betreft niet-geharmoniseerde data uit de basisregistratie Adressen en Gebouwen (BAG). De service wordt dagelijks geactualiseerd.</dct:description>
@@ -149,8 +151,6 @@
       </dct:language>
       <dct:spatial rdf:parseType="Resource">
          <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
-         <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral"><![CDATA[POLYGON((2.4807 53.7187,7.9685 53.7187,7.9685 50.6058,2.4807 50.6058,2.4807 53.7187))]]></dcat:bbox>
-         <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral"><![CDATA[<gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><gml:lowerCorner>2.4807 50.6058</gml:lowerCorner><gml:upperCorner>7.9685 53.7187</gml:upperCorner></gml:Envelope>]]></dcat:bbox>
          <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral"><![CDATA[{"type":"Polygon","coordinates":[[[2.4807,53.7187],[7.9685,53.7187],[7.9685,50.6058],[2.4807,50.6058],[2.4807,53.7187]]]}]]></dcat:bbox>
       </dct:spatial>
       <dct:spatial rdf:parseType="Resource">

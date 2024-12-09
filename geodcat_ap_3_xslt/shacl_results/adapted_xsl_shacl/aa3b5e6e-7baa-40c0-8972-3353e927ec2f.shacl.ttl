@@ -1,0 +1,285 @@
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a shacl:ValidationReport ;
+    shacl:conforms false ;
+    shacl:result [ a shacl:ValidationResult ;
+            shacl:focusNode <http://www.opengis.net/def/crs/EPSG/0/5709> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath dct:type ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:StandardShape/322371a77364a50f049d46180f6192532eea26dc> ;
+            shacl:value <http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode [ a rdfs:Resource,
+                        dcat:CatalogRecord ;
+                    dct:conformsTo <http://data.europa.eu/930/> ;
+                    dct:identifier "aa3b5e6e-7baa-40c0-8972-3353e927ec2f"^^xsd:string ;
+                    dct:language <http://publications.europa.eu/resource/authority/language/DUT> ;
+                    dct:modified "2024-08-26"^^xsd:date ;
+                    dct:source [ a rdfs:Resource,
+                                dcat:CatalogRecord ;
+                            dct:conformsTo [ a dct:Standard,
+                                        rdfs:Resource ;
+                                    dct:title "ISO 19115"@nl ;
+                                    owl:versionInfo "Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0"@nl ] ;
+                            dct:modified "2024-08-26"^^xsd:date ;
+                            cnt:characterEncoding "UTF-8"^^xsd:string ;
+                            foaf:primaryTopic <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ] ;
+                    dcat:contactPoint [ a rdfs:Resource,
+                                vcard:Individual ;
+                            vcard:fn "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ;
+                            vcard:hasAddress [ a rdfs:Resource,
+                                        vcard:Address ;
+                                    vcard:country-name "Nederland" ;
+                                    vcard:locality "Apeldoorn" ;
+                                    vcard:postal-code "7311 KZ" ;
+                                    vcard:region "Gelderland" ;
+                                    vcard:street-address "Hofstraat 110" ] ;
+                            vcard:hasEmail <mailto:dpi-gi@kadaster.nl> ;
+                            vcard:hasURL <https://www.kadaster.nl> ;
+                            vcard:organization-name "Kadaster"@nl ] ;
+                    prov:qualifiedAttribution [ a rdfs:Resource,
+                                prov:Attribution ;
+                            dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+                            prov:agent [ a rdfs:Resource,
+                                        prov:Agent,
+                                        foaf:Person ;
+                                    ns1:address [ a rdfs:Resource,
+                                                ns1:Address ;
+                                            ns1:adminUnitL1 "Nederland" ;
+                                            ns1:adminUnitL2 "Gelderland" ;
+                                            ns1:postCode "7311 KZ" ;
+                                            ns1:postName "Apeldoorn" ;
+                                            ns1:thoroughfare "Hofstraat 110" ] ;
+                                    org:memberOf [ a rdfs:Resource,
+                                                foaf:Organization ;
+                                            foaf:name "Kadaster"@nl ] ;
+                                    foaf:mbox <mailto:dpi-gi@kadaster.nl> ;
+                                    foaf:name "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ;
+                                    foaf:workplaceHomepage <https://www.kadaster.nl> ] ] ;
+                    foaf:primaryTopic <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ] ;
+            shacl:resultMessage "Value does not have class vcard:Kind" ;
+            shacl:resultPath dcat:contactPoint ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:CatalogRecordShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e> ;
+            shacl:value [ a rdfs:Resource,
+                        vcard:Individual ;
+                    vcard:fn "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ;
+                    vcard:hasAddress [ a rdfs:Resource,
+                                vcard:Address ;
+                            vcard:country-name "Nederland" ;
+                            vcard:locality "Apeldoorn" ;
+                            vcard:postal-code "7311 KZ" ;
+                            vcard:region "Gelderland" ;
+                            vcard:street-address "Hofstraat 110" ] ;
+                    vcard:hasEmail <mailto:dpi-gi@kadaster.nl> ;
+                    vcard:hasURL <https://www.kadaster.nl> ;
+                    vcard:organization-name "Kadaster"@nl ] ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://www.opengis.net/def/crs/EPSG/0/28992> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath dct:type ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:StandardShape/322371a77364a50f049d46180f6192532eea26dc> ;
+            shacl:value <http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/d0e1000> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://www.w3.org/ns/adms#representationTechnique> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/a016cb765e696433fe29faa313ae6ae2f3f76702> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ;
+            shacl:resultMessage "Value does not have class foaf:Agent" ;
+            shacl:resultPath <http://data.europa.eu/930/custodian> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/79c0c2e1bcab213fd06ca4c1782849db4a11225f> ;
+            shacl:value [ a rdfs:Resource,
+                        prov:Agent,
+                        foaf:Person ;
+                    ns1:address [ a rdfs:Resource,
+                                ns1:Address ;
+                            ns1:adminUnitL1 "Nederland" ;
+                            ns1:adminUnitL2 "Gelderland" ;
+                            ns1:postCode "7300 GH" ;
+                            ns1:postName "Apeldoorn" ;
+                            ns1:thoroughfare "Postbus 9046" ] ;
+                    org:memberOf [ a rdfs:Resource,
+                                foaf:Organization ;
+                            foaf:name "Kadaster"@nl ] ;
+                    foaf:mbox <mailto:bag@kadaster.nl> ;
+                    foaf:name "Klantcontactcenter"@nl ;
+                    foaf:phone <tel:+31088-1833400> ;
+                    foaf:workplaceHomepage <https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag> ] ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/d0e1000> ;
+            shacl:resultMessage "More than 1 values on <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/d0e1000>->dct:license" ;
+            shacl:resultPath dct:license ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:MaxCountConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/9eaae476a881de13b9430537ace6e70da7327dbd> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/resourceType> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/00bd195f813949c75d02f8a5916b9697bb4eb89f> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/topicCategory> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/7e81f1a1332766b4be433580d64a6ec4b1530493> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/d0e1000> ;
+            shacl:resultMessage "More than 1 values on <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/d0e1000>->dct:accessRights" ;
+            shacl:resultPath dct:accessRights ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:MaxCountConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/7a20e2eb5f5549088fd53fa93fab0958019f267e> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode [ a rdfs:Resource,
+                        prov:Attribution ;
+                    dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/custodian> ;
+                    prov:agent [ a rdfs:Resource,
+                                prov:Agent,
+                                foaf:Person ;
+                            ns1:address [ a rdfs:Resource,
+                                        ns1:Address ;
+                                    ns1:adminUnitL1 "Nederland" ;
+                                    ns1:adminUnitL2 "Gelderland" ;
+                                    ns1:postCode "7300 GH" ;
+                                    ns1:postName "Apeldoorn" ;
+                                    ns1:thoroughfare "Postbus 9046" ] ;
+                            org:memberOf [ a rdfs:Resource,
+                                        foaf:Organization ;
+                                    foaf:name "Kadaster"@nl ] ;
+                            foaf:mbox <mailto:bag@kadaster.nl> ;
+                            foaf:name "Klantcontactcenter"@nl ;
+                            foaf:phone <tel:+31088-1833400> ;
+                            foaf:workplaceHomepage <https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag> ] ] ;
+            shacl:resultMessage "Value does not have class foaf:Agent" ;
+            shacl:resultPath prov:agent ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#prov:AttributionShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc> ;
+            shacl:value [ a rdfs:Resource,
+                        prov:Agent,
+                        foaf:Person ;
+                    ns1:address [ a rdfs:Resource,
+                                ns1:Address ;
+                            ns1:adminUnitL1 "Nederland" ;
+                            ns1:adminUnitL2 "Gelderland" ;
+                            ns1:postCode "7300 GH" ;
+                            ns1:postName "Apeldoorn" ;
+                            ns1:thoroughfare "Postbus 9046" ] ;
+                    org:memberOf [ a rdfs:Resource,
+                                foaf:Organization ;
+                            foaf:name "Kadaster"@nl ] ;
+                    foaf:mbox <mailto:bag@kadaster.nl> ;
+                    foaf:name "Klantcontactcenter"@nl ;
+                    foaf:phone <tel:+31088-1833400> ;
+                    foaf:workplaceHomepage <https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag> ] ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66/DS/d0e1000> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/serviceProtocol> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DataServiceShape/eb98dee81407da4e91a31895d95101d0335b7c81> ;
+            shacl:value <http://www.opengeospatial.org/standards/wms> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/topicCategory> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/7e81f1a1332766b4be433580d64a6ec4b1530493> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/location> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/topicCategory> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/7e81f1a1332766b4be433580d64a6ec4b1530493> ;
+            shacl:value <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/planningCadastre> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/referenceSystem> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/87161588819073178c8f6950dcce2286cac45320> ;
+            shacl:value <http://www.opengis.net/def/crs/EPSG/0/5709> ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode [ a rdfs:Resource,
+                        prov:Attribution ;
+                    dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ;
+                    prov:agent [ a rdfs:Resource,
+                                prov:Agent,
+                                foaf:Person ;
+                            ns1:address [ a rdfs:Resource,
+                                        ns1:Address ;
+                                    ns1:adminUnitL1 "Nederland" ;
+                                    ns1:adminUnitL2 "Gelderland" ;
+                                    ns1:postCode "7311 KZ" ;
+                                    ns1:postName "Apeldoorn" ;
+                                    ns1:thoroughfare "Hofstraat 110" ] ;
+                            org:memberOf [ a rdfs:Resource,
+                                        foaf:Organization ;
+                                    foaf:name "Kadaster"@nl ] ;
+                            foaf:mbox <mailto:dpi-gi@kadaster.nl> ;
+                            foaf:name "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ;
+                            foaf:workplaceHomepage <https://www.kadaster.nl> ] ] ;
+            shacl:resultMessage "Value does not have class foaf:Agent" ;
+            shacl:resultPath prov:agent ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#prov:AttributionShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc> ;
+            shacl:value [ a rdfs:Resource,
+                        prov:Agent,
+                        foaf:Person ;
+                    ns1:address [ a rdfs:Resource,
+                                ns1:Address ;
+                            ns1:adminUnitL1 "Nederland" ;
+                            ns1:adminUnitL2 "Gelderland" ;
+                            ns1:postCode "7311 KZ" ;
+                            ns1:postName "Apeldoorn" ;
+                            ns1:thoroughfare "Hofstraat 110" ] ;
+                    org:memberOf [ a rdfs:Resource,
+                                foaf:Organization ;
+                            foaf:name "Kadaster"@nl ] ;
+                    foaf:mbox <mailto:dpi-gi@kadaster.nl> ;
+                    foaf:name "Directie Operatie, Dienstverlening en Registratie, afdeling Data-, Proces- en Informatiemanagement"@nl ;
+                    foaf:workplaceHomepage <https://www.kadaster.nl> ] ],
+        [ a shacl:ValidationResult ;
+            shacl:focusNode <http://kadaster/1fa33d90-79cb-11e2-b92a-0800200c9a66> ;
+            shacl:resultMessage "Value does not have class skos:Concept" ;
+            shacl:resultPath <http://data.europa.eu/930/referenceSystem> ;
+            shacl:resultSeverity shacl:Violation ;
+            shacl:sourceConstraintComponent shacl:ClassConstraintComponent ;
+            shacl:sourceShape <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/87161588819073178c8f6950dcce2286cac45320> ;
+            shacl:value <http://www.opengis.net/def/crs/EPSG/0/28992> ] .
+

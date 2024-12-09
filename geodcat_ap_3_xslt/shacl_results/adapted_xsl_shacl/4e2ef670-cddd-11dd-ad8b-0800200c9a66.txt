@@ -1,0 +1,99 @@
+Validation Report
+Conforms: False
+Results (14):
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/00bd195f813949c75d02f8a5916b9697bb4eb89f>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62>
+	Value Node: <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset>
+	Result Path: <http://data.europa.eu/930/resourceType>
+	Message: Value does not have class skos:Concept
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62>
+	Value Node: [ rdf:type rdfs:Resource, vcard:Individual ; vcard:fn Literal("InfoDesk", lang=nl) ; vcard:hasAddress [ rdf:type rdfs:Resource, vcard:Address ; vcard:country-name Literal("NL") ; vcard:locality Literal("Amersfoort") ; vcard:postal-code Literal("3800 BP") ; vcard:region Literal("UT") ; vcard:street-address Literal("Postbus 1600") ] ; vcard:hasEmail <mailto:info@cultureelerfgoed.nl> ; vcard:hasTelephone <tel:+0334217456> ; vcard:hasURL <https://www.cultureelerfgoed.nl> ; vcard:organization-name Literal("Rijksdienst voor het Cultureel Erfgoed", lang=nl) ]
+	Result Path: dcat:contactPoint
+	Message: Value does not have class vcard:Kind
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/7e81f1a1332766b4be433580d64a6ec4b1530493>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62>
+	Value Node: <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/planningCadastre>
+	Result Path: <http://data.europa.eu/930/topicCategory>
+	Message: Value does not have class skos:Concept
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DatasetShape/87161588819073178c8f6950dcce2286cac45320>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62>
+	Value Node: <http://www.opengis.net/def/crs/EPSG/0/28992>
+	Result Path: <http://data.europa.eu/930/referenceSystem>
+	Message: Value does not have class skos:Concept
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:CatalogRecordShape/7b6713c1f4a52e964f5db57eabef294b6d04e90e>
+	Focus Node: [ dcat:contactPoint [ rdf:type rdfs:Resource, vcard:Individual ; vcard:fn Literal("InfoDesk", lang=nl) ; vcard:hasAddress [ rdf:type rdfs:Resource, vcard:Address ; vcard:country-name Literal("NL") ; vcard:locality Literal("Amersfoort") ; vcard:postal-code Literal("3800 BP") ; vcard:region Literal("UT") ; vcard:street-address Literal("Postbus 1600") ] ; vcard:hasEmail <mailto:info@cultureelerfgoed.nl> ; vcard:hasTelephone <tel:+0334217456> ; vcard:hasURL <https://www.cultureelerfgoed.nl> ; vcard:organization-name Literal("Rijksdienst voor het Cultureel Erfgoed", lang=nl) ] ; dcterms:conformsTo <http://data.europa.eu/930/> ; dcterms:identifier Literal("4e2ef670-cddd-11dd-ad8b-0800200c9a66", datatype=xsd:string) ; dcterms:language <http://publications.europa.eu/resource/authority/language/DUT> ; dcterms:modified Literal("2024-09-27", datatype=xsd:date) ; dcterms:source [ cnt:characterEncoding Literal("UTF-8", datatype=xsd:string) ; dcterms:conformsTo [ dcterms:title Literal("ISO 19115", lang=nl) ; owl:versionInfo Literal("Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0", lang=nl) ; rdf:type dcterms:Standard, rdfs:Resource ] ; dcterms:modified Literal("2024-09-27", datatype=xsd:date) ; foaf:primaryTopic <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ; rdf:type dcat:CatalogRecord, rdfs:Resource ] ; foaf:primaryTopic <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62> ; prov:qualifiedAttribution [ dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ; prov:agent [ foaf:mbox <mailto:info@cultureelerfgoed.nl> ; foaf:name Literal("InfoDesk", lang=nl) ; foaf:phone <tel:+0334217456> ; foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ; locn:address [ locn:adminUnitL1 Literal("NL") ; locn:adminUnitL2 Literal("UT") ; locn:postCode Literal("3800 BP") ; locn:postName Literal("Amersfoort") ; locn:thoroughfare Literal("Postbus 1600") ; rdf:type locn:Address, rdfs:Resource ] ; org:memberOf [ foaf:name Literal("Rijksdienst voor het Cultureel Erfgoed", lang=nl) ; rdf:type foaf:Organization, rdfs:Resource ] ; rdf:type foaf:Person, prov:Agent, rdfs:Resource ] ; rdf:type prov:Attribution, rdfs:Resource ] ; rdf:type dcat:CatalogRecord, rdfs:Resource ]
+	Value Node: [ rdf:type rdfs:Resource, vcard:Individual ; vcard:fn Literal("InfoDesk", lang=nl) ; vcard:hasAddress [ rdf:type rdfs:Resource, vcard:Address ; vcard:country-name Literal("NL") ; vcard:locality Literal("Amersfoort") ; vcard:postal-code Literal("3800 BP") ; vcard:region Literal("UT") ; vcard:street-address Literal("Postbus 1600") ] ; vcard:hasEmail <mailto:info@cultureelerfgoed.nl> ; vcard:hasTelephone <tel:+0334217456> ; vcard:hasURL <https://www.cultureelerfgoed.nl> ; vcard:organization-name Literal("Rijksdienst voor het Cultureel Erfgoed", lang=nl) ]
+	Result Path: dcat:contactPoint
+	Message: Value does not have class vcard:Kind
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DataServiceShape/eb98dee81407da4e91a31895d95101d0335b7c81>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/DS/d0e921>
+	Value Node: <http://www.opengeospatial.org/standards/wfs>
+	Result Path: <http://data.europa.eu/930/serviceProtocol>
+	Message: Value does not have class skos:Concept
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DataServiceShape/eb98dee81407da4e91a31895d95101d0335b7c81>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/DS/d0e887>
+	Value Node: <http://www.opengeospatial.org/standards/wms>
+	Result Path: <http://data.europa.eu/930/serviceProtocol>
+	Message: Value does not have class skos:Concept
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/7a20e2eb5f5549088fd53fa93fab0958019f267e>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e921>
+	Result Path: dct:accessRights
+	Message: More than 1 values on <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e921>->dct:accessRights
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/7a20e2eb5f5549088fd53fa93fab0958019f267e>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e887>
+	Result Path: dct:accessRights
+	Message: More than 1 values on <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e887>->dct:accessRights
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/a016cb765e696433fe29faa313ae6ae2f3f76702>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e921>
+	Value Node: <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector>
+	Result Path: <http://www.w3.org/ns/adms#representationTechnique>
+	Message: Value does not have class skos:Concept
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dcat:DistributionShape/a016cb765e696433fe29faa313ae6ae2f3f76702>
+	Focus Node: <https://services.rce.geovoorziening.nl/www/download/e39bd6e0-7651-11e0-a1f0-0800200c9a62/d0e887>
+	Value Node: <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType/vector>
+	Result Path: <http://www.w3.org/ns/adms#representationTechnique>
+	Message: Value does not have class skos:Concept
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#dct:StandardShape/322371a77364a50f049d46180f6192532eea26dc>
+	Focus Node: <http://www.opengis.net/def/crs/EPSG/0/28992>
+	Value Node: <http://inspire.ec.europa.eu/glossary/SpatialReferenceSystem>
+	Result Path: dct:type
+	Message: Value does not have class skos:Concept
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#prov:AttributionShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc>
+	Focus Node: [ dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ; prov:agent [ foaf:mbox <mailto:info@cultureelerfgoed.nl> ; foaf:name Literal("InfoDesk", lang=nl) ; foaf:phone <tel:+0334217456> ; foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ; locn:address [ locn:adminUnitL1 Literal("NL") ; locn:adminUnitL2 Literal("UT") ; locn:postCode Literal("3800 BP") ; locn:postName Literal("Amersfoort") ; locn:thoroughfare Literal("Postbus 1600") ; rdf:type locn:Address, rdfs:Resource ] ; org:memberOf [ foaf:name Literal("Rijksdienst voor het Cultureel Erfgoed", lang=nl) ; rdf:type foaf:Organization, rdfs:Resource ] ; rdf:type foaf:Person, prov:Agent, rdfs:Resource ] ; rdf:type prov:Attribution, rdfs:Resource ]
+	Value Node: [ foaf:mbox <mailto:info@cultureelerfgoed.nl> ; foaf:name Literal("InfoDesk", lang=nl) ; foaf:phone <tel:+0334217456> ; foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ; locn:address [ locn:adminUnitL1 Literal("NL") ; locn:adminUnitL2 Literal("UT") ; locn:postCode Literal("3800 BP") ; locn:postName Literal("Amersfoort") ; locn:thoroughfare Literal("Postbus 1600") ; rdf:type locn:Address, rdfs:Resource ] ; org:memberOf [ foaf:name Literal("Rijksdienst voor het Cultureel Erfgoed", lang=nl) ; rdf:type foaf:Organization, rdfs:Resource ] ; rdf:type foaf:Person, prov:Agent, rdfs:Resource ]
+	Result Path: prov:agent
+	Message: Value does not have class foaf:Agent
+Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+	Severity: shacl:Violation
+	Source Shape: <https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0#prov:AttributionShape/5d41e5114e4b537d95f4f2bd7f8c114dc0e388bc>
+	Focus Node: [ dcat:hadRole <http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact> ; prov:agent [ foaf:mbox <mailto:info@cultureelerfgoed.nl> ; foaf:name Literal("InfoDesk", lang=nl) ; foaf:phone <tel:+0334217456> ; foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ; locn:address [ locn:adminUnitL1 Literal("NL") ; locn:adminUnitL2 Literal("UT") ; locn:postCode Literal("3800 BP") ; locn:postName Literal("Amersfoort") ; locn:thoroughfare Literal("Postbus 1600") ; rdf:type locn:Address, rdfs:Resource ] ; org:memberOf [ foaf:name Literal("Rijksdienst voor het Cultureel Erfgoed", lang=nl) ; rdf:type foaf:Organization, rdfs:Resource ] ; rdf:type foaf:Person, prov:Agent, rdfs:Resource ] ; rdf:type prov:Attribution, rdfs:Resource ]
+	Value Node: [ foaf:mbox <mailto:info@cultureelerfgoed.nl> ; foaf:name Literal("InfoDesk", lang=nl) ; foaf:phone <tel:+0334217456> ; foaf:workplaceHomepage <https://www.cultureelerfgoed.nl> ; locn:address [ locn:adminUnitL1 Literal("NL") ; locn:adminUnitL2 Literal("UT") ; locn:postCode Literal("3800 BP") ; locn:postName Literal("Amersfoort") ; locn:thoroughfare Literal("Postbus 1600") ; rdf:type locn:Address, rdfs:Resource ] ; org:memberOf [ foaf:name Literal("Rijksdienst voor het Cultureel Erfgoed", lang=nl) ; rdf:type foaf:Organization, rdfs:Resource ] ; rdf:type foaf:Person, prov:Agent, rdfs:Resource ]
+	Result Path: prov:agent
+	Message: Value does not have class foaf:Agent
