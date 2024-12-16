@@ -154,8 +154,6 @@ ex:Dataset a sh:NodeShape, rdfs:Class ;
 .
 ## Einde Dataset ##
 
-
-
 #### groepering van velden ####
 ex:verplichtGroep 
   a               sh:PropertyGroup ;
@@ -165,10 +163,6 @@ ex:HVDGroep
   a               sh:PropertyGroup ;
   rdfs:label      "HVD" .
 
-# ex:aanbevolenGroep
-#   a               sh:PropertyGroup ;
-#   rdfs:label      "Aanbevolen eigenschappen Dataset" .
-
 ex:GroepCR 
   a               sh:PropertyGroup ;
   rdfs:label      "Verplichte eigenschappen Catalog Record" .
@@ -176,7 +170,9 @@ ex:GroepCR
 ex:GroepDS 
   a               sh:PropertyGroup ;
   rdfs:label      "Verplichte eigenschappen Dataservice" .
+
 #### Templates ####
+
 ## template voor contact point ##
 ex:contactPoint
   a               sh:NodeShape ;
@@ -214,11 +210,7 @@ ex:agent
                   sh:uniqueLang   true ;
                   sh:defaultValue "Mijn Organisatie"@nl;
                 ] ;
-  # sh:property   [ 
-  #                 sh:maxCount     1 ;
-  #                 sh:name         "type" ;
-  #                 sh:path         dct:type ;
-  #               ] ;             
+     
   sh:targetClass  foaf:Agent .
 
 
@@ -253,14 +245,6 @@ ex:agent
 
 ex:CatalogRecord a sh:NodeShape, rdfs:Class ;
  sh:targetClass  dcat:CatalogRecord ;
-  # sh:property [
-  #   sh:group        ex:GroepCR ;
-  #   sh:datatype     rdf:langString ;
-  #   sh:languageIn   ( "nl" "en" ) ;
-  #   sh:uniqueLang   true ;
-  #   sh:name         "title" ;
-  #   sh:path         dct:title
-  # ] ;
 
   sh:property [
     sh:group        ex:GroepCR ;
@@ -431,7 +415,6 @@ sh:property   [
     sh:maxCount     1 ;
     sh:path         dct:publisher ;
   ] ;
-
   .
 
   ## Einde Dataservice fields ##
