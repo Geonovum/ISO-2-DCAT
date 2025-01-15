@@ -2926,6 +2926,9 @@ Other than that changes are in formatting to help readability and IDE functional
         </xsl:when>
         <!-- In case the rights/licence URL IS provided -->
         <xsl:when test="gmx:Anchor/@xlink:href">
+        <!-- @NH accessConstraints van het type Creative Commons zouden naar een dct:license gemapt moeten worden ipv een dct:accessRights 
+          => logica moet zijn, als het de Inspire waarden niet zijn (want dat zijn wel accessRights) dan moet het een license worden...
+        --> 
           <dct:accessRights>
             <dct:RightsStatement rdf:about="{gmx:Anchor/@xlink:href}"/>
           </dct:accessRights>
