@@ -1,0 +1,15 @@
+Validation Report
+Conforms: False
+Results (2):
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/DatasetShape_landingPage_aanbevolen_minCount>
+	Focus Node: exampleMS:1T2p3o4B
+	Result Path: dcat:landingPage
+	Message: Less than 1 values on exampleMS:1T2p3o4B->dcat:landingPage
+Validation Result in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/DatasetShape_documentation_aanbevolen_minCount>
+	Focus Node: exampleMS:1T2p3o4B
+	Result Path: foaf:page
+	Message: Less than 1 values on exampleMS:1T2p3o4B->foaf:page

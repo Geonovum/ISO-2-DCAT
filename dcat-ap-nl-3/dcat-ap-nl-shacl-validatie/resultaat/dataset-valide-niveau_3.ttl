@@ -1,0 +1,22 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <https://data.exampleMS.gov/id/data/1T2p3o4B> ;
+            sh:resultMessage "Less than 1 values on exampleMS:1T2p3o4B->foaf:page" ;
+            sh:resultPath foaf:page ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/DatasetShape_documentation_aanbevolen_minCount> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <https://data.exampleMS.gov/id/data/1T2p3o4B> ;
+            sh:resultMessage "Less than 1 values on exampleMS:1T2p3o4B->dcat:landingPage" ;
+            sh:resultPath dcat:landingPage ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape <http://modellen.geostandaarden.nl/dcat-ap-nl/id/shape/DatasetShape_landingPage_aanbevolen_minCount> ] .
+
