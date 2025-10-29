@@ -1,0 +1,80 @@
+[
+  {
+    "naam": "Vaarwegmarkeringen Nederland",
+    "type": "Dataset (valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/be1b1514-8d1f-48e1-9624-fee9b784138b/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/be1b1514-8d1f-48e1-9624-fee9b784138b#resource"
+  },
+  {
+    "naam": "Vaarwegmarkeringen Nederland",
+    "type": "Service - Atom (valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/252db472-201d-430b-9c55-4d37563787bc/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/252db472-201d-430b-9c55-4d37563787bc#resource"
+  },
+  {
+    "naam": "Vaarwegmarkeringen Nederland",
+    "type": "Service - WFS (valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/82677435-ce93-4a79-94dd-bbc87fb61f36/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/82677435-ce93-4a79-94dd-bbc87fb61f36#resource"
+  },
+  {
+    "naam": "Vaarwegmarkeringen Nederland",
+    "type": "Service - WMS (valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/918388cf-9d8c-4264-b108-3e375bde0d52/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/918388cf-9d8c-4264-b108-3e375bde0d52#resource"
+  },
+  {
+    "naam": "Bathymetrie Nederland - binnenwateren 1 mtr. - Serie - Landelijke Opslagsyssteem Lodingen (LOL)",
+    "type": "Series (valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/9d973c4a-ef03-4785-b7f6-942e86b385f7/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  },
+  {
+    "naam": "Bathymetrie Nederland - binnenwateren 1 mtr. - Serie - Landelijke Opslagsyssteem Lodingen (LOL)",
+    "type": "Service - WMS (valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/9d9573b0-bd3b-4d7b-a97d-e65841e6e0b4/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  },
+  {
+    "naam": "Bathymetrie Nederland - binnenwateren 1 mtr. - Serie - Landelijke Opslagsyssteem Lodingen (LOL)",
+    "type": "Service (WCS, valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/9d9573b0-bd3b-4d7b-a97d-e65841e6e0b2/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  },
+  {
+    "naam": "Onbewerkte satellietbeelden van Formosat-2 satelliet, 8 meter multispectraal, radiometrisch gecorrigeerd",
+    "type": "Series (niet valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/d3bd364b-b925-4332-afce-5b0c48054ccb/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  },
+  {
+    "naam": "CBS Vierkantstatistieken 100m",
+    "type": "Dataset (niet valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/1462bbce-ccd3-4362-83d8-4535ca8f44eb/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  },
+  {
+    "naam": "CBS Vierkantstatistieken 100m",
+    "type": "Service 100m 2000 (WFS valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/e79ffdbb-f5cf-44ce-b5c2-ff4cbdf0abf4/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  },
+  {
+    "naam": "CBS Vierkantstatistieken 100m",
+    "type": "Service 100m 2000 (WMS valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/602ad34d-fe51-48f4-8224-95835144cf68/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  },
+  {
+    "naam": "Regionale Wandelnetwerken",
+    "type": "Dataset (niet valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/1246d20e-47fd-4917-a88e-1ac8291ff4d8/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  },
+  {
+    "naam": "Regionale Wandelnetwerken",
+    "type": "Service - WMS (niet valide)",
+    "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/392e6a4e-5274-11ea-954f-080027325297/formatters/dcat-ap-nl-3?output=xml",
+    "focus_node": ""
+  }
+]
