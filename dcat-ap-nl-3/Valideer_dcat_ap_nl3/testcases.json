@@ -33,19 +33,19 @@
     "naam": "Bathymetrie Nederland - binnenwateren 1 mtr. - Serie - Landelijke Opslagsyssteem Lodingen (LOL)",
     "type": "Service - WMS (valide)",
     "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/9d9573b0-bd3b-4d7b-a97d-e65841e6e0b4/formatters/dcat-ap-nl-3?output=xml",
-    "focus_node": ""
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/9d9573b0-bd3b-4d7b-a97d-e65841e6e0b4#resource"
   },
   {
     "naam": "Bathymetrie Nederland - binnenwateren 1 mtr. - Serie - Landelijke Opslagsyssteem Lodingen (LOL)",
     "type": "Service (WCS, valide)",
     "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/9d9573b0-bd3b-4d7b-a97d-e65841e6e0b2/formatters/dcat-ap-nl-3?output=xml",
-    "focus_node": ""
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/9d9573b0-bd3b-4d7b-a97d-e65841e6e0b2#resource"
   },
   {
-    "naam": "Onbewerkte satellietbeelden van Formosat-2 satelliet, 8 meter multispectraal, radiometrisch gecorrigeerd",
+    "naam": "Onbewerkte satellietbeelden van Formosat-2 satelliet",
     "type": "Series (niet valide)",
     "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/d3bd364b-b925-4332-afce-5b0c48054ccb/formatters/dcat-ap-nl-3?output=xml",
-    "focus_node": ""
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/d3bd364b-b925-4332-afce-5b0c48054ccb#resource"
   },
   {
     "naam": "CBS Vierkantstatistieken 100m",
@@ -57,24 +57,24 @@
     "naam": "CBS Vierkantstatistieken 100m",
     "type": "Service 100m 2000 (WFS valide)",
     "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/e79ffdbb-f5cf-44ce-b5c2-ff4cbdf0abf4/formatters/dcat-ap-nl-3?output=xml",
-    "focus_node": ""
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/e79ffdbb-f5cf-44ce-b5c2-ff4cbdf0abf4#resource"
   },
   {
     "naam": "CBS Vierkantstatistieken 100m",
     "type": "Service 100m 2000 (WMS valide)",
     "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/602ad34d-fe51-48f4-8224-95835144cf68/formatters/dcat-ap-nl-3?output=xml",
-    "focus_node": ""
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/602ad34d-fe51-48f4-8224-95835144cf68#resource"
   },
   {
     "naam": "Regionale Wandelnetwerken",
     "type": "Dataset (niet valide)",
     "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/1246d20e-47fd-4917-a88e-1ac8291ff4d8/formatters/dcat-ap-nl-3?output=xml",
-    "focus_node": ""
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/1246d20e-47fd-4917-a88e-1ac8291ff4d8#resource"
   },
   {
     "naam": "Regionale Wandelnetwerken",
     "type": "Service - WMS (niet valide)",
     "url": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/392e6a4e-5274-11ea-954f-080027325297/formatters/dcat-ap-nl-3?output=xml",
-    "focus_node": ""
+    "focus_node": "https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/api/records/392e6a4e-5274-11ea-954f-080027325297#resource"
   }
 ]
