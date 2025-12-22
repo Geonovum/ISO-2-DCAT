@@ -56,6 +56,7 @@ geodcatap:spatialResolutionAsScale a dqv:Metric .
     geodcatap:resourceType <http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset> ;
     geodcatap:topicCategory <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/planningCadastre> ;
     dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL_2> ;
+    dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dcterms:conformsTo [ a dcterms:Standard ;
             dcterms:issued "2024-04-22"^^xsd:date ;
             dcterms:title "Stads- en Dorpsgezichten gegevensstructuur en -semantiek"@nl ] ;
